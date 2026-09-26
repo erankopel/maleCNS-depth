@@ -1,0 +1,10 @@
+34bee5603441cc33c87693861fdf786f5da071917fe94ffd534f565abe4287c4  ./PREREG_maleCNS_depth_2026-09-19.md
+e6ba35b75ab1c4909c9777b6d43030835caa43e5ba5d40b4621156a483467dac  ./README.txt
+26a916be0133de98e53ff464ed210e27f5154e85f4e3492716696e35eb1dda48  ./code/analyse.py
+6e30a35fdd5f83a3c7a4cf5ebe593815cef6b0cd945e7692b26202f11f502e87  ./code/build_graph.py
+8e678677b39761cdcfc158b8af31ef9a6d86a26f9cd8b7b54a6f2b88acfc62b0  ./code/cert.py
+89219c6ceadcd9b597f9c453dbd0b417a769ddd5ddbb9a08c6df347fffa9881f  ./code/fetch_data.py
+8f86454082c4f3ed1a079efb4b9ec552948a45394dae69dff94929d48fe5d548  ./code/modes.py
+60e7a95118c5755475bc8aeff082207eaf8f36122391ba9372c0142bb74a98a9  ./code/slowmode_check.py
+2b06646bae36cdbda93dca079c431aba0a92ec3a92a2f2bc367fa87ee803f1b6  ./code/spectra.py
+e825cb074f8f2542eb2fbedadf0b8675efdccb746ff24719dc681aeadeced174  ./code/spectra_scc.py

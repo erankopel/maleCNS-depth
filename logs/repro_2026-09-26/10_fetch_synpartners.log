@@ -1,0 +1,11 @@
+=== syn-partners download 2026-09-26T15:40:21Z ===
+last-modified: Wed, 03 Jun 2026 13:55:42 GMT
+x-goog-generation: 1780494942562468
+x-goog-stored-content-length: 6777179098
+x-goog-hash: crc32c=jTlNIA==
+x-goog-hash: md5=WO/PcS+MTU3l8q1R6X3vdg==
+content-length: 6777179098
+gcs md5 (hex): 58efcf712f8c4d4de5f2ad51e97def76
+curl rc=0  wall=48s  bytes=6777179098
+local md5    : 58efcf712f8c4d4de5f2ad51e97def76
+OK md5 match -> /home/claude/maleCNS-depth/data/syn-partners.feather

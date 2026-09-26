@@ -1,0 +1,10 @@
+=== 01_fetch_data: python3 code/fetch_data.py ===
+downloading body-annotations-male-cns-v1.0-minconf-0.5.feather (14 MB) ...
+ok (downloaded)       body-annotations.feather
+downloading body-neurotransmitters-male-cns-v1.0.feather (43 MB) ...
+ok (downloaded)       body-nt.feather
+downloading connectome-weights-male-cns-v1.0-minconf-0.5.feather (1051 MB) ...
+ok (downloaded)       connectome-weights.feather
+all inputs match the pre-registration
+[peakrun] wall 9.5 s  peak RSS 29 MB  user 2.9 s  sys 1.4 s
+rc=0  wall=10s

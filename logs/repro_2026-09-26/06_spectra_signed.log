@@ -1,0 +1,39 @@
+=== 06_spectra_signed: python3 code/spectra.py signed ===
+consensus neurotransmitter among the 166,700 neurons:
+  acetylcholine     103,720   sign +1
+  glutamate          29,302   sign -1
+  gaba               22,069   sign -1
+  histamine           7,891   sign -1
+  unclear             2,999   sign +0
+  dopamine              392   sign +0
+  unknown               178   sign +0
+  octopamine            101   sign +0
+  serotonin              48   sign +0
+excitatory 103,720  inhibitory 59,262  excluded 3,718
+median NT confidence: 0.936
+
+signed map: 24,523,096 edges;  signed-input fraction check: 1.000 (should be <= 1)
+top eigenvalues of the signed map M (largest magnitude), ARPACK:
+  |lam| = 0.915062   lam = -0.915062 +0.000000i
+  |lam| = 0.913732   lam = +0.913732 +0.000000i
+  |lam| = 0.912235   lam = -0.912235 +0.000000i
+  |lam| = 0.909779   lam = +0.909779 +0.000000i
+  |lam| = 0.847635   lam = -0.847635 +0.000000i
+  |lam| = 0.847502   lam = +0.847502 +0.000000i
+  |lam| = 0.835503   lam = -0.835503 +0.000000i
+  |lam| = 0.835390   lam = +0.835390 +0.000000i
+  |lam| = 0.834843   lam = -0.834843 +0.000000i
+  |lam| = 0.830067   lam = -0.830067 +0.000000i
+
+spectral radius rho(M) = 0.915062   ratio |lam2/lam1| = 0.998547
+
+hops  mean ||M^r e||_1   mean ||M^r e||_2   mean net (sum) sign balance
+   1         0.85892         0.13545  +0.7000
+   2         0.73269         0.03234  -0.2590
+   4         0.18461         0.00417  +0.1066
+   8         0.01594         0.00021  -0.0787
+  16         0.00024         0.00000  -0.1713
+  32         0.00000         0.00000  -0.0562
+  64         0.00000         0.00000  +0.0030
+[peakrun] wall 42.8 s  peak RSS 1759 MB  user 53.7 s  sys 1.1 s
+rc=0  wall=43s

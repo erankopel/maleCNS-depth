@@ -1,0 +1,48 @@
+=== 07_modes: python3 code/modes.py ===
+superclasses in giant SCC: {'ascending_neuron': np.int64(1846), 'cb_efferent': np.int64(4), 'cb_endocrine': np.int64(63), 'cb_intrinsic': np.int64(32163), 'cb_motor': np.int64(105), 'cb_sensory': np.int64(4710), 'cb_sensory_tbc': np.int64(11), 'descending_neuron': np.int64(1314), 'descending_neuron_tbc': np.int64(2), 'efferent_ascending': np.int64(8), 'efferent_descending': np.int64(4), 'ol_intrinsic': np.int64(88562), 'ol_sensory': np.int64(5935), 'sensory_ascending': np.int64(533), 'sensory_ascending_tbc': np.int64(2), 'sensory_descending': np.int64(12), 'visual_centrifugal': np.int64(559), 'visual_projection': np.int64(9200), 'visual_projection_tbc': np.int64(2), 'vnc_efferent': np.int64(89), 'vnc_endocrine': np.int64(22), 'vnc_intrinsic': np.int64(13151), 'vnc_motor': np.int64(674), 'vnc_sensory': np.int64(6284), 'vnc_sensory_tbc': np.int64(22), 'vnc_tbc': np.int64(37)} 
+
+=== item 1: leading modes of the signed map (giant SCC) ===
+mode  lam        PR (eff. #neurons)  mass in top-10  top carriers (type, side, NT)
+  0  -0.9151         2.4          0.989          R8_unclear/?/his, R7_unclear/?/his, Mi15/L/ace, L1/L/glu
+  1  +0.9137         2.3          0.994          R8_unclear/?/his, R7_unclear/?/his, Mi15/L/ace, L1/L/glu
+  2  -0.9122         2.3          0.985          R8p/?/his, R7p/?/his, Mi15/L/ace, Dm8b/L/glu
+  3  +0.9098         2.2          0.992          R8p/?/his, R7p/?/his, Dm8b/L/glu, L1/L/glu
+  4  -0.8476         2.2          0.970          R8p/?/his, R7p/?/his, Tm20/L/ace, Dm8b/L/glu
+  5  +0.8475         2.0          0.991          R8p/?/his, R7p/?/his, Dm8b/L/glu, L3/L/ace
+  6  -0.8355        76.1          0.296          R8d/?/his, R7d/?/his, R7d/?/his, R8d/?/his
+  7  +0.8354         2.3          0.993          R8_unclear/?/his, R7_unclear/?/his, Mi15/L/ace, L1/L/glu
+  8  -0.8348        96.6          0.157          ER3d_b/L/gab, ER3d_b/L/gab, ER3p_a/R/gab, ER3p_a/R/gab
+  9  -0.8301         2.3          0.991          R8_unclear/?/his, R7_unclear/?/his, Mi15/L/ace, L1/L/glu
+
+=== item 2: slow mode lam2 = 0.94503 (left eigenvector) ===
+group                     #neurons   share of + mass   share of - mass   stationary mass
+brain (OL+CB)              141,129            0.938             0.006            0.231
+VNC                         20,109            0.007             0.921            0.653
+asc/desc bridge              3,160            0.050             0.064            0.097
+optic lobe proper           94,497            0.049            -0.000            0.020
+OL<->CB bridge               9,759            0.048             0.000            0.018
+central brain intrinsic     32,163            0.840             0.006            0.193
+
+top carriers of the slow mode: type/superclass/side  (signed weight)
+  Pleural remotor/abductor MN vnc_motor          R   -0.00145
+  Sternal posterior rotator MN vnc_motor          L   -0.00140
+  Pleural remotor/abductor MN vnc_motor          L   -0.00128
+  Fe reductor MN vnc_motor          L   -0.00125
+  Sternotrochanter MN vnc_motor          R   -0.00122
+  Fe reductor MN vnc_motor          R   -0.00119
+  Sternotrochanter MN vnc_motor          L   -0.00117
+  APL            cb_intrinsic       R   +0.00113
+  APL            cb_intrinsic       L   +0.00112
+  Sternal anterior rotator MN vnc_motor          R   -0.00107
+  Tr flexor MN   vnc_motor          R   -0.00106
+  MNhl62         vnc_motor          R   -0.00105
+  Sternotrochanter MN vnc_motor          R   -0.00105
+  Sternal posterior rotator MN vnc_motor          L   -0.00102
+  Pleural remotor/abductor MN vnc_motor          L   -0.00101
+
+per-hop stationary escape probabilities:
+  brain(+bridge) -> VNC : 0.1443    VNC -> brain(+bridge): 0.0708
+  optic lobe -> rest    : 0.2463    rest -> optic lobe   : 0.0049
+  two-block prediction for lam2 (1 - p - q): brain/VNC 0.7849, OL/rest 0.7487
+[peakrun] wall 43.6 s  peak RSS 2283 MB  user 67.0 s  sys 2.0 s
+rc=0  wall=44s

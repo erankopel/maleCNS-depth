@@ -1,0 +1,29 @@
+{
+  "upload_type": "software",
+  "title": "maleCNS-depth: pre-registration and analysis code for the certified information-breaking depth of the male Drosophila CNS connectome",
+  "description": "<p>Registration record for a pre-registered study of the synapse-flow Markov chain of the male <em>Drosophila</em> central nervous system connectome (male-cns v1.0, FlyEM and collaborators, CC-BY).</p><p>This release publishes the pre-registration PREREG_maleCNS_depth_2026-09-19.md byte-identical to the text drafted on 19 September 2026 (sha256 34bee5603441cc33c87693861fdf786f5da071917fe94ffd534f565abe4287c4), the seven exploratory analysis scripts behind its Section 4, and a download script that checks the three public inputs against the md5 sums frozen in its Section 1. None of the five confirmatory hypotheses (H1 to H5, Section 5) had been run when this release was made. The registration date is the date of this record, not 19 September 2026. REGISTRATION.md and DEVIATIONS.md state what was known and done before registration.</p>",
+  "creators": [
+    {
+      "name": "Kopel, Eran",
+      "affiliation": "Tel Aviv University",
+      "orcid": "0000-0003-4657-8636"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "connectomics",
+    "Drosophila",
+    "male CNS connectome",
+    "ventral nerve cord",
+    "Markov chains",
+    "spectral gap",
+    "mixing time",
+    "Dobrushin coefficient",
+    "certified numerics",
+    "pre-registration",
+    "reproducible research"
+  ],
+  "language": "eng",
+  "version": "0.1.0"
+}

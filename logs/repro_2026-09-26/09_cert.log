@@ -1,0 +1,26 @@
+=== 09_cert: python3 code/cert.py ===
+giant SCC n=165,314  nnz=25,545,360  max degree D=11,201
+
+r=  1  lower 1.0000  upper 1.0000   (hub-column mass floor 0.00e+00)  [4s]
+r=  2  lower 1.0000  upper 1.0000   (hub-column mass floor 0.00e+00)  [8s]
+r=  4  lower 0.9896  upper 1.0000   (hub-column mass floor 0.00e+00)  [16s]
+r=  8  lower 0.8794  upper 0.9997   (hub-column mass floor 2.86e-04)  [33s]
+r= 16  lower 0.6231  upper 0.9936   (hub-column mass floor 6.38e-03)  [64s]
+r= 32  lower 0.2663  upper 0.9697   (hub-column mass floor 3.03e-02)  [129s]
+r= 64  lower 0.0428  upper 0.9434   (hub-column mass floor 5.66e-02)  [258s]
+
+=== certified bounds on tau(P^r), giant SCC, minconf-0.5 weights ===
+  r   lower bound (witness pair)   upper bound (60 hub columns)   robust lower, delta=0.05   robust upper, delta=0.05
+   1                   1.0000                       1.0000                   1.0000                   1.0000
+   2                   1.0000                       1.0000                   0.7895                   1.0000
+   4                   0.9896                       1.0000                   0.3583                   1.0000
+   8                   0.8794                       0.9997                   0.0000                   0.9999
+  16                   0.6231                       0.9936                   0.0000                   0.9987
+  32                   0.2663                       0.9697                   0.0000                   0.9988
+  64                   0.0428                       0.9434                   0.0000                   0.9999
+
+witness pair at r=64 (giant-SCC indices -> body IDs): 533585 801768
+reading: tau(P^r) is the largest TV distance any two starting neurons can retain after r hops;
+         P^r is information-breaking to within eps once the upper bound falls below eps.
+[peakrun] wall 263.0 s  peak RSS 1446 MB  user 220.6 s  sys 42.4 s
+rc=0  wall=263s

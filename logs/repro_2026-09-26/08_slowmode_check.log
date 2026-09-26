@@ -1,0 +1,13 @@
+=== 08_slowmode_check: python3 code/slowmode_check.py ===
+vnc_motor          n=   674  stationary mass 0.168  median in-syn    2729  median out-syn     15
+vnc_intrinsic      n=13,151  stationary mass 0.472  median in-syn     740  median out-syn    724
+ascending_neuron   n= 1,846  stationary mass 0.049  median in-syn    1237  median out-syn   2057
+descending_neuron  n= 1,314  stationary mass 0.048  median in-syn    2008  median out-syn   2318
+cb_intrinsic       n=32,163  stationary mass 0.193  median in-syn     698  median out-syn    688
+ol_intrinsic       n=88,562  stationary mass 0.020  median in-syn     277  median out-syn    357
+full giant SCC (reference)                    SCC 165,314  lam2 = 0.9450  (gap 0.0550)
+motor neurons removed                         SCC 164,637  lam2 = 0.9430  (gap 0.0570)
+ascending + descending neurons removed        SCC 161,597  lam2 = 0.9997  (gap 0.0003)
+brain only (VNC removed)                      SCC 145,035  lam2 = 0.9256  (gap 0.0744)
+[peakrun] wall 38.0 s  peak RSS 2280 MB  user 61.8 s  sys 2.8 s
+rc=0  wall=38s

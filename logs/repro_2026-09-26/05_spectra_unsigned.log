@@ -1,0 +1,42 @@
+=== 05_spectra_unsigned: python3 code/spectra.py unsigned ===
+consensus neurotransmitter among the 166,700 neurons:
+  acetylcholine     103,720   sign +1
+  glutamate          29,302   sign -1
+  gaba               22,069   sign -1
+  histamine           7,891   sign -1
+  unclear             2,999   sign +0
+  dopamine              392   sign +0
+  unknown               178   sign +0
+  octopamine            101   sign +0
+  serotonin              48   sign +0
+excitatory 103,720  inhibitory 59,262  excluded 3,718
+median NT confidence: 0.936
+
+top eigenvalues of P (largest magnitude), ARPACK:
+  |lam| = 1.000000   lam = -1.000000 +0.000000i
+  |lam| = 1.000000   lam = +1.000000 +0.000000i
+  |lam| = 1.000000   lam = -1.000000 +0.000000i
+  |lam| = 1.000000   lam = +1.000000 +0.000000i
+  |lam| = 0.998614   lam = +0.998614 +0.000000i
+  |lam| = 0.944620   lam = +0.944620 +0.000000i
+  |lam| = 0.917390   lam = +0.917390 +0.000000i
+  |lam| = 0.911938   lam = +0.911938 +0.000000i
+
+spectral gap 1-|lam2| = -0.000000
+  asymptotic depth for TV factor 0.1: r ~ -5184960683398422 hops
+  asymptotic depth for TV factor 0.01: r ~ -10369921366796844 hops
+  asymptotic depth for TV factor 0.001: r ~ -15554882050195268 hops
+
+hops  mean TV to stationary (20 random sources)
+   1  0.9969   (min 0.9864, max 1.0000)
+   2  0.9355   (min 0.7551, max 1.0000)
+   4  0.7704   (min 0.5182, max 0.9730)
+   8  0.5694   (min 0.2657, max 0.8093)
+  16  0.3303   (min 0.1140, max 0.5902)
+  32  0.1145   (min 0.0348, max 0.2613)
+  64  0.0182   (min 0.0060, max 0.0446)
+ 100  0.0045   (min 0.0038, max 0.0072)
+ 150  0.0032   (min 0.0028, max 0.0035)
+ 200  0.0022   (min 0.0018, max 0.0025)
+[peakrun] wall 105.0 s  peak RSS 1266 MB  user 112.1 s  sys 0.8 s
+rc=0  wall=105s

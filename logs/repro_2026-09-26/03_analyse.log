@@ -1,0 +1,39 @@
+=== 03_analyse: python3 code/analyse.py ===
+neurons 166,700   edges 25,582,938   synapses 124,177,617
+
+--- weight >= 1 ---
+edges 25,582,938  synapses 124,177,616
+out-degree  median 112  mean 153.5  max 11,203
+in-degree   median 98  mean 153.5  max 11,526
+isolated (no in and no out): 217
+strongly connected components: 1,385   largest 165,314 (99.2% of neurons)
+
+--- weight >= 5 ---
+edges 6,242,118  synapses 89,860,280
+out-degree  median 25  mean 37.4  max 7,570
+in-degree   median 19  mean 37.4  max 6,660
+isolated (no in and no out): 864
+strongly connected components: 8,833   largest 157,821 (94.7% of neurons)
+
+--- forward reachability (w>=1, 25 random core sources) ---
+neurons reachable: median 166,325 (99.8%)  min 166,325  max 166,325
+
+--- mixing of the row-stochastic synapse-flow map (w>=1) ---
+stationary mass on top 100 neurons: 0.0936
+hops  mean TV distance to stationary  mean support size
+   1  0.9986           106
+   2  0.9507        17,321
+   3  0.8585        97,853
+   4  0.7861       163,441
+   5  0.7286       166,228
+   6  0.6797       166,318
+   7  0.6374       166,322
+   8  0.5993       166,323
+   9  0.5643       166,324
+  10  0.5314       166,324
+  11  0.5001       166,324
+  12  0.4704       166,324
+  16  0.3678       166,325
+  20  0.2875       166,325
+[peakrun] wall 40.2 s  peak RSS 1381 MB  user 28.6 s  sys 10.7 s
+rc=0  wall=40s

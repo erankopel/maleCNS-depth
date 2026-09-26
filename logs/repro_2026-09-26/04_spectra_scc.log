@@ -1,0 +1,20 @@
+=== 04_spectra_scc: python3 code/spectra_scc.py ===
+giant SCC: 165,314 neurons, 25,545,360 internal edges, 123,954,262 synapses
+top eigenvalues of P on the giant SCC:
+  |lam| = 1.000000   lam = +1.000000 +0.000000i
+  |lam| = 0.945027   lam = +0.945027 +0.000000i
+  |lam| = 0.917827   lam = +0.917827 +0.000000i
+  |lam| = 0.911913   lam = +0.911913 +0.000000i
+  |lam| = 0.896132   lam = +0.896132 +0.000000i
+  |lam| = 0.886517   lam = +0.886517 +0.000000i
+  |lam| = 0.881160   lam = +0.881160 +0.000000i
+  |lam| = 0.876775   lam = +0.876775 +0.000000i
+
+spectral gap 1-|lam2| = 0.054973
+  asymptotic depth for TV factor 0.1: r ~ 41 hops
+  asymptotic depth for TV factor 0.01: r ~ 81 hops
+  asymptotic depth for TV factor 0.001: r ~ 122 hops
+
+stationary mass: top 1% of neurons hold 0.422, top 10% hold 0.854; entropy 13.96 bits of 17.33
+[peakrun] wall 37.4 s  peak RSS 1240 MB  user 45.1 s  sys 0.6 s
+rc=0  wall=37s

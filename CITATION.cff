@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this pre-registration or code, please cite it as below."
+title: "maleCNS-depth: pre-registration and analysis code for the certified information-breaking depth of the male Drosophila CNS connectome"
+authors:
+  - family-names: Kopel
+    given-names: Eran
+    orcid: "https://orcid.org/0000-0003-4657-8636"
+    affiliation: "Tel Aviv University"
+license: MIT
+version: 0.1.0
+date-released: 2026-09-26
+repository-code: "https://github.com/erankopel/maleCNS-depth"
+keywords:
+  - connectomics
+  - Drosophila
+  - male CNS connectome
+  - Markov chains
+  - spectral gap
+  - Dobrushin coefficient
+  - certified numerics
+  - pre-registration

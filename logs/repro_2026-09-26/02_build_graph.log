@@ -1,0 +1,17 @@
+=== 02_build_graph: python3 code/build_graph.py ===
+annotated bodies      : 211,577
+neurons (superclass)  : 166,700
+  batch 400/2318  kept so far 10,840,461
+  batch 800/2318  kept so far 14,618,629
+  batch 1200/2318  kept so far 18,641,524
+  batch 1600/2318  kept so far 22,321,964
+  batch 2000/2318  kept so far 24,691,396
+
+segment-to-segment rows : 151,856,684
+synapses in all rows    : 311,833,243
+neuron-to-neuron edges  : 25,582,938
+synapses on those edges : 124,177,617
+weight>=5 edges         : 6,242,118
+saved /home/claude/maleCNS-depth/data/neuron_edges.npz
+[peakrun] wall 40.0 s  peak RSS 1774 MB  user 38.9 s  sys 1.3 s
+rc=0  wall=40s

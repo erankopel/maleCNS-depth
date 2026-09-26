@@ -1,0 +1,10 @@
+15:40:01  01_fetch_data  rc=0  wall=10s
+15:40:41  02_build_graph  rc=0  wall=40s
+15:41:21  03_analyse  rc=0  wall=40s
+15:41:58  04_spectra_scc  rc=0  wall=37s
+15:43:43  05_spectra_unsigned  rc=0  wall=105s
+15:44:26  06_spectra_signed  rc=0  wall=43s
+15:45:10  07_modes  rc=0  wall=44s
+15:45:48  08_slowmode_check  rc=0  wall=38s
+15:50:11  09_cert  rc=0  wall=263s
+ALL DONE
