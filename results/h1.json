@@ -1,0 +1,242 @@
+{
+  "hypothesis": "H1",
+  "criteria": {
+    "i": false,
+    "ii": true,
+    "iii": true
+  },
+  "verdict": "FAIL",
+  "rows": {
+    "full": {
+      "label": "weight >= 5 giant SCC (reference)",
+      "removed_classes": [],
+      "classes_present": [],
+      "removed_neurons": 0,
+      "remaining_composition": {
+        "brain": 135502,
+        "cord": 18617,
+        "neck": 3702
+      },
+      "scc_size": 157821,
+      "scc_composition": {
+        "brain": 135502,
+        "cord": 18617,
+        "neck": 3702
+      },
+      "scc_edges": 6120084,
+      "two_sided": true,
+      "lam2": 0.9965237200086753,
+      "gap": 0.0034762799913247155,
+      "lam1": [
+        0.9999999999999981,
+        0.0
+      ],
+      "top8": [
+        [
+          0.9999999999999981,
+          0.0
+        ],
+        [
+          0.9965237200086753,
+          0.0
+        ],
+        [
+          0.9806165439348334,
+          0.0
+        ],
+        [
+          0.9776878911734624,
+          0.0
+        ],
+        [
+          -0.9748905472016939,
+          0.0
+        ],
+        [
+          0.9707455503691593,
+          0.0
+        ],
+        [
+          -0.9643495014432106,
+          0.0
+        ],
+        [
+          0.957721829044565,
+          0.0
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 2.9
+      }
+    },
+    "neck_script": {
+      "label": "ascending + descending removed (slowmode_check set)",
+      "removed_classes": [
+        "ascending_neuron",
+        "descending_neuron",
+        "sensory_ascending"
+      ],
+      "classes_present": [
+        "ascending_neuron",
+        "descending_neuron",
+        "sensory_ascending"
+      ],
+      "removed_neurons": 3681,
+      "remaining_composition": {
+        "brain": 135502,
+        "cord": 18617,
+        "neck": 21
+      },
+      "scc_size": 153784,
+      "scc_composition": {
+        "brain": 135298,
+        "cord": 18468,
+        "neck": 18
+      },
+      "scc_edges": 5452485,
+      "two_sided": true,
+      "lam2": 0.9998103338018364,
+      "gap": 0.0001896661981636294,
+      "lam1": [
+        1.0000000000000024,
+        0.0
+      ],
+      "top8": [
+        [
+          1.0000000000000024,
+          0.0
+        ],
+        [
+          0.9998103338018364,
+          0.0
+        ],
+        [
+          0.9982735047108677,
+          0.0
+        ],
+        [
+          0.9836100259896997,
+          0.0
+        ],
+        [
+          0.9800438685424256,
+          0.0
+        ],
+        [
+          -0.9751202360734603,
+          0.0
+        ],
+        [
+          0.9746134065247231,
+          0.0
+        ],
+        [
+          0.9675407358637811,
+          0.0
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 3.5
+      }
+    },
+    "motor_script": {
+      "label": "motor neurons removed (vnc_motor)",
+      "removed_classes": [
+        "vnc_motor"
+      ],
+      "classes_present": [
+        "vnc_motor"
+      ],
+      "removed_neurons": 116,
+      "remaining_composition": {
+        "brain": 135502,
+        "cord": 18501,
+        "neck": 3702
+      },
+      "scc_size": 157670,
+      "scc_composition": {
+        "brain": 135502,
+        "cord": 18466,
+        "neck": 3702
+      },
+      "scc_edges": 6096032,
+      "two_sided": true,
+      "lam2": 0.9957980758793107,
+      "gap": 0.004201924120689315,
+      "lam1": [
+        1.000000000000001,
+        0.0
+      ],
+      "top8": [
+        [
+          1.000000000000001,
+          0.0
+        ],
+        [
+          0.9957980758793107,
+          0.0
+        ],
+        [
+          0.9901152683587774,
+          0.0
+        ],
+        [
+          0.940452170073334,
+          0.0
+        ],
+        [
+          0.9362440453168028,
+          0.0
+        ],
+        [
+          0.9162476745590837,
+          0.0
+        ],
+        [
+          0.9074265783539087,
+          0.0
+        ],
+        [
+          0.8831515981445274,
+          0.0
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 3.4
+      }
+    }
+  },
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "platform": "Linux-6.18.44-fc-v42-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "date_utc": "2026-09-26T17:33:43Z"
+  }
+}

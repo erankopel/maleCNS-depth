@@ -1,0 +1,84 @@
+=== 06_h2_floor: python3 h2_floor.py ===
+G: 165,314 neurons, 25,545,360 edges
+structural check G = 165314: ok
+neurons of G with primary neuropil LOP: 16,646; EB: 419
+median signed-eligible input of G: F = 342.0 synapses; median total input: 349.0
+structural check F = 342.0: ok
+
+--- primary (C2): F = median signed-eligible input: floor F = 342.0 ---
+mode  lambda               |lambda|   PR      LOP+EB power   top carriers (type/side/NT)
+  0  -0.83484+0.00000i  0.83484     96.6         0.993   ER3d_b/L/gab, ER3d_b/L/gab, ER3p_a/R/gab, ER3p_a/R/gab
+  1  -0.82100+0.00000i  0.82100     31.6         0.962   ER4d/R/gab, ER4d/L/gab, ER4d/L/gab, ER4d/R/gab
+  2  +0.81127+0.00000i  0.81127     29.5         0.000   LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace
+  3  -0.79410+0.00000i  0.79410     37.7         0.947   ER3p_a/R/gab, ER3p_a/R/gab, ER3p_a/L/gab, ER3p_a/R/gab
+  4  +0.76141+0.00000i  0.76141     36.2         0.000   LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace
+  5  -0.75693+0.00000i  0.75693     58.1         0.995   ER3m/L/gab, ER3m/R/gab, ER3m/R/gab, ER3m/R/gab
+  6  -0.70667+0.00000i  0.70667     74.5         0.926   ER3w_b/R/gab, ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab
+  7  -0.68355+0.00568i  0.68357     38.6         0.971   ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab, ER3w_b/R/gab
+  8  -0.68355-0.00568i  0.68357     38.6         0.971   ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab, ER3w_b/R/gab
+  9  +0.66431+0.00000i  0.66431     87.0         0.000   KCab-p/L/ace, KCab-p/L/ace, KCab-p/L/ace, KCab-p/L/ace
+ 10  +0.65246+0.00000i  0.65246     57.1         0.000   VP3+_l2PN/R/ace, VP3+_l2PN/L/ace, VP3+_l2PN/R/ace, VP3+_l2PN/L/ace
+ 11  +0.65160+0.00000i  0.65160    126.3         0.000   KCab-p/R/ace, KCab-p/R/ace, KCab-p/R/ace, KCab-p/R/ace
+ 12  +0.64129+0.00000i  0.64129    694.6         0.000   KCg-d/R/ace, KCg-d/R/ace, KCg-d/R/ace, KCg-d/R/ace
+ 13  +0.63453+0.00000i  0.63453    665.9         0.000   MBON03/R/glu, MBON16/L/ace, KCa'b'-ap2/L/ace, KCa'b'-ap2/L/ace
+ 14  +0.63091+0.00000i  0.63091     70.1         0.000   WG4/?/ace, WG4/?/ace, WG4/?/ace, WG4/?/ace
+ 15  +0.09681+0.62145i  0.62894    107.0         0.000   SNxx29/?/ace, SNxx29/?/ace, SNxx25/?/ace, SNxx25/?/ace
+ 16  +0.09681-0.62145i  0.62894    107.0         0.000   SNxx29/?/ace, SNxx29/?/ace, SNxx25/?/ace, SNxx25/?/ace
+ 17  +0.61292+0.00000i  0.61292    452.6         0.000   KCa'b'-ap1/R/ace, KCa'b'-ap1/R/ace, KCa'b'-ap1/R/ace, KCa'b'-ap1/R/ace
+ 18  -0.60597+0.00000i  0.60597     17.5         0.000   LgLG5/?/glu, LgLG5/?/glu, LgLG5/?/glu, LgLG5/?/glu
+ 19  +0.60340+0.00000i  0.60340    552.6         0.000   KCa'b'-ap1/L/ace, KCa'b'-ap1/L/ace, KCa'b'-ap1/L/ace, KCa'b'-ap1/L/ace
+
+(a) spectral radius 0.83484 < 0.85: True
+(b) modes with PR > 20 among the top 20: 19 (>= 10): True
+(c) descriptive: some top-20 mode with > 50% power on LOP/EB neurons: True
+saved /home/claude/maleCNS-depth/results/h2.json
+H2 PASS
+
+--- sensitivity: F = 700, the value stated in the PREREG: floor F = 700.0 ---
+mode  lambda               |lambda|   PR      LOP+EB power   top carriers (type/side/NT)
+  0  -0.83103+0.00000i  0.83103     91.2         0.997   ER3d_b/L/gab, ER3d_b/R/gab, ER3d_b/L/gab, ER3d_b/L/gab
+  1  -0.82100+0.00000i  0.82100     31.9         0.966   ER4d/R/gab, ER4d/L/gab, ER4d/L/gab, ER4d/R/gab
+  2  -0.77682+0.00000i  0.77682     58.5         0.956   ER3p_a/R/gab, ER3p_a/R/gab, ER3p_a/L/gab, ER3p_a/R/gab
+  3  -0.75109+0.00000i  0.75109     69.9         0.979   ER3p_a/L/gab, ER3p_a/R/gab, ER3p_a/R/gab, ER3p_a/L/gab
+  4  -0.70666+0.00000i  0.70666     79.5         0.939   ER3w_b/R/gab, ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab
+  5  -0.68357+0.00000i  0.68357     57.2         0.985   ER3p_a/R/gab, ER3p_a/R/gab, ER3p_a/R/gab, ER3p_a/L/gab
+  6  -0.67740+0.00000i  0.67740     39.1         0.990   ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab, ER3w_b/R/gab
+  7  -0.57720+0.00000i  0.57720     30.5         0.966   ER5/R/gab, ER5/R/gab, ER5/R/gab, ER5/L/gab
+  8  -0.53888+0.00000i  0.53888     20.6         0.000   FB2I_a/L/glu, FB2I_a/R/glu, FB2I_a/R/glu, FB2I_a/L/glu
+  9  +0.53079+0.00000i  0.53079     17.8         0.000   LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace
+ 10  -0.52067+0.00000i  0.52067    116.1         0.782   ER3p_b/L/gab, ER3p_b/R/gab, ER3p_b/L/gab, ER3p_b/R/gab
+ 11  +0.51426+0.00000i  0.51426    181.5         0.000   VP3+_l2PN/L/ace, VP3+_l2PN/R/ace, VP3+_l2PN/L/ace, l2LN21/L/gab
+ 12  -0.51127+0.00000i  0.51127     15.4         0.933   ER3p_b/L/gab, ER3p_b/R/gab, ER3p_b/L/gab, ER3p_b/R/gab
+ 13  +0.50479+0.00000i  0.50479     95.0         0.000   VP3+_l2PN/R/ace, VP3+_l2PN/L/ace, VP3+_l2PN/L/ace, l2LN22/L/unc
+ 14  -0.49466+0.00000i  0.49466    124.3         0.106   Delta7/R/glu, Delta7/L/glu, Delta7/L/glu, Delta7/R/glu
+ 15  +0.48753+0.00000i  0.48753    696.7         0.000   lLN1_bc/R/ace, lLN1_bc/R/ace, lLN1_bc/R/ace, lLN1_bc/R/ace
+ 16  +0.06672+0.48194i  0.48654    101.9         0.000   SNxx25/?/ace, GNG644/?/unc, SNxx25/?/ace, SNxx29/?/ace
+ 17  +0.06672-0.48194i  0.48654    101.9         0.000   SNxx25/?/ace, GNG644/?/unc, SNxx25/?/ace, SNxx29/?/ace
+ 18  +0.45324+0.00000i  0.45324     29.1         0.000   LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace
+ 19  +0.43616+0.00000i  0.43616    726.8         0.000   KCg-d/R/ace, KCg-d/R/ace, KCg-d/R/ace, KCg-s2/R/ace
+
+--- sensitivity: F = median total input: floor F = 349.0 ---
+mode  lambda               |lambda|   PR      LOP+EB power   top carriers (type/side/NT)
+  0  -0.83484+0.00000i  0.83484     96.6         0.994   ER3d_b/L/gab, ER3d_b/L/gab, ER3p_a/R/gab, ER3p_a/R/gab
+  1  -0.82100+0.00000i  0.82100     31.6         0.962   ER4d/R/gab, ER4d/L/gab, ER4d/L/gab, ER4d/R/gab
+  2  +0.81089+0.00000i  0.81089     29.4         0.000   LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace
+  3  -0.79410+0.00000i  0.79410     37.7         0.947   ER3p_a/R/gab, ER3p_a/R/gab, ER3p_a/L/gab, ER3p_a/R/gab
+  4  +0.76074+0.00000i  0.76074     35.8         0.000   LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace, LgAG1/?/ace
+  5  -0.75693+0.00000i  0.75693     58.1         0.995   ER3m/L/gab, ER3m/R/gab, ER3m/R/gab, ER3m/R/gab
+  6  -0.70667+0.00000i  0.70667     74.5         0.926   ER3w_b/R/gab, ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab
+  7  -0.68355+0.00568i  0.68357     38.6         0.971   ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab, ER3w_b/R/gab
+  8  -0.68355-0.00568i  0.68357     38.6         0.971   ER3w_b/R/gab, ER3w_b/L/gab, ER3w_b/L/gab, ER3w_b/R/gab
+  9  +0.66373+0.00000i  0.66373     87.1         0.000   KCab-p/L/ace, KCab-p/L/ace, KCab-p/L/ace, KCab-p/L/ace
+ 10  +0.65242+0.00000i  0.65242     45.4         0.000   VP3+_l2PN/R/ace, VP3+_l2PN/L/ace, VP3+_l2PN/R/ace, VP3+_l2PN/L/ace
+ 11  +0.65116+0.00000i  0.65116    126.4         0.000   KCab-p/R/ace, KCab-p/R/ace, KCab-p/R/ace, KCab-p/R/ace
+ 12  +0.64116+0.00000i  0.64116    691.5         0.000   KCg-d/R/ace, KCg-d/R/ace, KCg-d/R/ace, KCg-d/R/ace
+ 13  +0.63444+0.00000i  0.63444    667.5         0.000   MBON03/R/glu, MBON16/L/ace, KCa'b'-ap2/L/ace, KCa'b'-ap2/L/ace
+ 14  +0.09641+0.61978i  0.62723    106.3         0.000   SNxx29/?/ace, SNxx29/?/ace, SNxx25/?/ace, SNxx25/?/ace
+ 15  +0.09641-0.61978i  0.62723    106.3         0.000   SNxx29/?/ace, SNxx29/?/ace, SNxx25/?/ace, SNxx25/?/ace
+ 16  +0.62365+0.00000i  0.62365     68.2         0.000   WG4/?/ace, WG4/?/ace, WG4/?/ace, WG4/?/ace
+ 17  +0.61218+0.00000i  0.61218    430.5         0.000   KCa'b'-ap1/R/ace, KCa'b'-ap1/R/ace, KCa'b'-ap1/R/ace, KCa'b'-ap1/R/ace
+ 18  -0.60402+0.00000i  0.60402     17.4         0.000   LgLG5/?/glu, LgLG5/?/glu, LgLG5/?/glu, LgLG5/?/glu
+ 19  +0.60312+0.00000i  0.60312    556.3         0.000   KCa'b'-ap1/L/ace, KCa'b'-ap1/L/ace, KCa'b'-ap1/L/ace, KCa'b'-ap1/L/ace
+saved /home/claude/maleCNS-depth/results/h2_sensitivity.json
+[peakrun] wall 47.1 s  peak RSS 1768 MB  user 45.2 s  sys 1.8 s
+rc=0  wall=47s

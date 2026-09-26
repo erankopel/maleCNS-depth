@@ -1,0 +1,27 @@
+=== 08_h4_confidence: python3 h4_confidence.py ===
+G: 165,314 neurons, 25,545,360 edges, 123,954,262 synapses
+structural check G = 165314: ok
+pass 1 (136 s): syn-partners rows inside G 123,954,262; rows on no G edge 0; edges whose weight differs from the syn-partners count 0
+pass 2 (72 s): rows with min(conf) < 0.5: 0
+stationary distribution: 480 iterations, final L1 change 1.0e-13
+eps_i at c = 0.70: mean 0.1440, median 0.1460, stationary-weighted mean 0.1231
+witness rows: 100 (100 distinct)
+r =   1  nominal 1.0000  robust c=0.70 +1.0000  c=0.55 +1.0000  c=0.51 +1.0000  uniform +0.7895   [15 s]
+r =   2  nominal 1.0000  robust c=0.70 +0.8212  c=0.55 +0.9838  c=0.51 +0.9973  uniform +0.5789   [33 s]
+r =   4  nominal 0.9981  robust c=0.70 +0.3958  c=0.55 +0.8937  c=0.51 +0.9770  uniform +0.1560   [59 s]
+r =   8  nominal 0.9357  robust c=0.70 -0.4696  c=0.55 +0.5954  c=0.51 +0.8604  uniform -0.4413   [107 s]
+r =  16  nominal 0.7075  robust c=0.70 -0.5109  c=0.55 -0.0278  c=0.51 +0.5547  uniform -0.4807   [195 s]
+r =  32  nominal 0.3122  robust c=0.70 -0.5200  c=0.55 -0.0706  c=0.51 +0.0713  uniform -0.5021   [367 s]
+saved /home/claude/maleCNS-depth/results/h4.json
+
+robust lower bound on tau(P^32) at c = 0.70: -0.5200 (> 0.10: False)
+largest grid level with robust lower bound on tau(P^32) > 0.10: None
+H4 FAIL
+
+r =  48  nominal 0.1265  robust c=0.70 -0.5220  c=0.55 -0.0713  c=0.51 -0.0146  uniform -0.5079   [533 s]
+r =  64  nominal 0.0506  robust c=0.70 -0.5227  c=0.55 -0.0716  c=0.51 -0.0148  uniform -0.5100   [700 s]
+r =  96  nominal 0.0081  robust c=0.70 -0.5231  c=0.55 -0.0717  c=0.51 -0.0149  uniform -0.5110   [1030 s]
+r = 128  nominal 0.0013  robust c=0.70 -0.5231  c=0.55 -0.0717  c=0.51 -0.0149  uniform -0.5112   [1359 s]
+saved /home/claude/maleCNS-depth/results/h4_full.json
+[peakrun] wall 1596.7 s  peak RSS 6579 MB  user 1313.6 s  sys 279.5 s
+rc=0  wall=1597s

@@ -1,0 +1,7 @@
+=== 01_fetch_inputs: python3 /home/claude/maleCNS-depth/code/fetch_data.py ===
+ok (already present)  body-annotations.feather
+ok (already present)  body-nt.feather
+ok (already present)  connectome-weights.feather
+all inputs match the pre-registration
+[peakrun] wall 65.6 s  peak RSS 26 MB  user 2.0 s  sys 0.3 s
+rc=0  wall=65s

@@ -1,0 +1,33 @@
+=== 05_h1_gap: python3 h1_gap.py ===
+weight >= 5 giant SCC: 157,821 neurons, 6,120,084 edges
+structural check G5 = 157821: ok
+weight >= 5 giant SCC (reference): removed 0 (classes present: []); remaining {'brain': 135502, 'cord': 18617, 'neck': 3702}; giant SCC 157,821 = {'brain': 135502, 'cord': 18617, 'neck': 3702}; two-sided: True
+    |lam1| = 1.000000   |lam2| = 0.996524   gap 0.003476
+ascending + descending removed (slowmode_check set): removed 3,681 (classes present: ['ascending_neuron', 'descending_neuron', 'sensory_ascending']); remaining {'brain': 135502, 'cord': 18617, 'neck': 21}; giant SCC 153,784 = {'brain': 135298, 'cord': 18468, 'neck': 18}; two-sided: True
+    |lam1| = 1.000000   |lam2| = 0.999810   gap 0.000190
+motor neurons removed (vnc_motor): removed 116 (classes present: ['vnc_motor']); remaining {'brain': 135502, 'cord': 18501, 'neck': 3702}; giant SCC 157,670 = {'brain': 135502, 'cord': 18466, 'neck': 3702}; two-sided: True
+    |lam1| = 1.000000   |lam2| = 0.995798   gap 0.004202
+
+(i)   |lam2| = 0.996524 in [0.90, 0.97]: False
+(ii)  1 - |lam2| after neck removal = 0.000190 < 0.002: True
+(iii) shift after motor removal = 0.000726 < 0.01: True
+saved /home/claude/maleCNS-depth/results/h1.json
+H1 FAIL
+
+--- sensitivity rows (not scored) ---
+ascending_neuron + descending_neuron only (PREREG 4.2 text): removed 3,152 (classes present: ['ascending_neuron', 'descending_neuron']); remaining {'brain': 135502, 'cord': 18617, 'neck': 550}; giant SCC 154,318 = {'brain': 135305, 'cord': 18481, 'neck': 532}; two-sided: True
+    |lam1| = 1.000000   |lam2| = 0.999732   gap 0.000268
+every neck-crossing superclass removed: removed 3,702 (classes present: ['ascending_neuron', 'descending_neuron', 'sensory_ascending', 'sensory_ascending_tbc', 'descending_neuron_tbc', 'efferent_ascending', 'efferent_descending', 'sensory_descending']); remaining {'brain': 135502, 'cord': 18617, 'neck': 0}; giant SCC 135,293 = {'brain': 135293, 'cord': 0, 'neck': 0}; two-sided: False
+    |lam1| = 1.000000   |lam2| = 0.963289   gap 0.036711
+    decoupled; largest brain-side SCC 135,293, |lam2| = 0.9632888205944145
+    decoupled; largest cord-side SCC 18,465, |lam2| = 0.9983677783855172
+vnc_motor and cb_motor removed: removed 182 (classes present: ['vnc_motor', 'cb_motor']); remaining {'brain': 135436, 'cord': 18501, 'neck': 3702}; giant SCC 157,602 = {'brain': 135435, 'cord': 18466, 'neck': 3701}; two-sided: True
+    |lam1| = 1.000000   |lam2| = 0.995779   gap 0.004221
+brain only (VNC superclasses removed, as script): removed 18,617 (classes present: ['vnc_motor', 'vnc_intrinsic', 'vnc_sensory', 'vnc_efferent', 'vnc_endocrine', 'vnc_tbc', 'vnc_sensory_tbc']); remaining {'brain': 135502, 'cord': 0, 'neck': 3702}; giant SCC 139,150 = {'brain': 135502, 'cord': 0, 'neck': 3648}; two-sided: True
+    |lam1| = 1.000000   |lam2| = 0.931793   gap 0.068207
+cross-check full: |lam2| with ncv = 64, seed 12: 0.996523720008678
+cross-check neck_script: |lam2| with ncv = 64, seed 12: 0.9998103338018385
+cross-check motor_script: |lam2| with ncv = 64, seed 12: 0.9957980758793082
+saved /home/claude/maleCNS-depth/results/h1_sensitivity.json
+[peakrun] wall 45.5 s  peak RSS 911 MB  user 44.2 s  sys 1.2 s
+rc=0  wall=46s

@@ -1,0 +1,388 @@
+{
+  "hypothesis": "H1",
+  "scored": false,
+  "rows": {
+    "neck_text": {
+      "label": "ascending_neuron + descending_neuron only (PREREG 4.2 text)",
+      "removed_classes": [
+        "ascending_neuron",
+        "descending_neuron"
+      ],
+      "classes_present": [
+        "ascending_neuron",
+        "descending_neuron"
+      ],
+      "removed_neurons": 3152,
+      "remaining_composition": {
+        "brain": 135502,
+        "cord": 18617,
+        "neck": 550
+      },
+      "scc_size": 154318,
+      "scc_composition": {
+        "brain": 135305,
+        "cord": 18481,
+        "neck": 532
+      },
+      "scc_edges": 5468913,
+      "two_sided": true,
+      "lam2": 0.999731627241797,
+      "gap": 0.0002683727582030171,
+      "lam1": [
+        0.999999999999989,
+        0.0
+      ],
+      "top8": [
+        [
+          0.999999999999989,
+          0.0
+        ],
+        [
+          0.999731627241797,
+          0.0
+        ],
+        [
+          0.9982431621012616,
+          0.0
+        ],
+        [
+          0.9836086022682707,
+          0.0
+        ],
+        [
+          0.9800043603630916,
+          0.0
+        ],
+        [
+          -0.9751202359603819,
+          0.0
+        ],
+        [
+          0.9745991671122932,
+          0.0
+        ],
+        [
+          0.9675026934390745,
+          0.0
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 3.4
+      }
+    },
+    "neck_all": {
+      "label": "every neck-crossing superclass removed",
+      "removed_classes": [
+        "ascending_neuron",
+        "descending_neuron",
+        "sensory_ascending",
+        "sensory_ascending_tbc",
+        "descending_neuron_tbc",
+        "efferent_ascending",
+        "efferent_descending",
+        "sensory_descending"
+      ],
+      "classes_present": [
+        "ascending_neuron",
+        "descending_neuron",
+        "sensory_ascending",
+        "sensory_ascending_tbc",
+        "descending_neuron_tbc",
+        "efferent_ascending",
+        "efferent_descending",
+        "sensory_descending"
+      ],
+      "removed_neurons": 3702,
+      "remaining_composition": {
+        "brain": 135502,
+        "cord": 18617,
+        "neck": 0
+      },
+      "scc_size": 135293,
+      "scc_composition": {
+        "brain": 135293,
+        "cord": 0,
+        "neck": 0
+      },
+      "scc_edges": 4790812,
+      "two_sided": false,
+      "lam2": 0.9632888205944145,
+      "gap": 0.03671117940558555,
+      "lam1": [
+        1.0000000000000073,
+        0.0
+      ],
+      "top8": [
+        [
+          1.0000000000000073,
+          0.0
+        ],
+        [
+          0.9632888205944145,
+          0.0
+        ],
+        [
+          0.9290716217739414,
+          0.0
+        ],
+        [
+          0.9116213210951352,
+          0.0
+        ],
+        [
+          0.8796910017815401,
+          0.0
+        ],
+        [
+          0.8633443229079896,
+          0.0
+        ],
+        [
+          0.8202885020704173,
+          0.0017056274928064384
+        ],
+        [
+          0.8202885020704173,
+          -0.0017056274928064384
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 2.0
+      },
+      "decoupled": true,
+      "sides": {
+        "brain": {
+          "scc_size": 135293,
+          "lam2": 0.9632888205944145
+        },
+        "cord": {
+          "scc_size": 18465,
+          "lam2": 0.9983677783855172
+        }
+      }
+    },
+    "motor_all": {
+      "label": "vnc_motor and cb_motor removed",
+      "removed_classes": [
+        "vnc_motor",
+        "cb_motor"
+      ],
+      "classes_present": [
+        "vnc_motor",
+        "cb_motor"
+      ],
+      "removed_neurons": 182,
+      "remaining_composition": {
+        "brain": 135436,
+        "cord": 18501,
+        "neck": 3702
+      },
+      "scc_size": 157602,
+      "scc_composition": {
+        "brain": 135435,
+        "cord": 18466,
+        "neck": 3701
+      },
+      "scc_edges": 6088485,
+      "two_sided": true,
+      "lam2": 0.9957785432250954,
+      "gap": 0.004221456774904597,
+      "lam1": [
+        1.0000000000000009,
+        0.0
+      ],
+      "top8": [
+        [
+          1.0000000000000009,
+          0.0
+        ],
+        [
+          0.9957785432250954,
+          0.0
+        ],
+        [
+          0.9900300022097471,
+          0.0
+        ],
+        [
+          0.9403989900688565,
+          0.0
+        ],
+        [
+          0.9364567067593182,
+          0.0
+        ],
+        [
+          0.9116947497224627,
+          0.0
+        ],
+        [
+          0.8828908041609971,
+          0.0
+        ],
+        [
+          0.8707289491175874,
+          0.0
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 4.0
+      }
+    },
+    "brain_only": {
+      "label": "brain only (VNC superclasses removed, as script)",
+      "removed_classes": [
+        "vnc_motor",
+        "vnc_intrinsic",
+        "vnc_sensory",
+        "vnc_efferent",
+        "vnc_endocrine",
+        "vnc_tbc",
+        "vnc_sensory_tbc"
+      ],
+      "classes_present": [
+        "vnc_motor",
+        "vnc_intrinsic",
+        "vnc_sensory",
+        "vnc_efferent",
+        "vnc_endocrine",
+        "vnc_tbc",
+        "vnc_sensory_tbc"
+      ],
+      "removed_neurons": 18617,
+      "remaining_composition": {
+        "brain": 135502,
+        "cord": 0,
+        "neck": 3702
+      },
+      "scc_size": 139150,
+      "scc_composition": {
+        "brain": 135502,
+        "cord": 0,
+        "neck": 3648
+      },
+      "scc_edges": 5151054,
+      "two_sided": true,
+      "lam2": 0.9317925250685622,
+      "gap": 0.06820747493143775,
+      "lam1": [
+        0.9999999999999962,
+        0.0
+      ],
+      "top8": [
+        [
+          0.9999999999999962,
+          0.0
+        ],
+        [
+          0.9317925250685622,
+          0.0
+        ],
+        [
+          0.9142321158485066,
+          0.0
+        ],
+        [
+          0.8920789464539494,
+          0.0
+        ],
+        [
+          0.8633467754428475,
+          0.0
+        ],
+        [
+          0.8235536866435421,
+          0.0
+        ],
+        [
+          0.8169848801511007,
+          0.0
+        ],
+        [
+          0.8118817287406497,
+          -0.007859799673398041
+        ]
+      ],
+      "arpack": {
+        "k": 8,
+        "ncv": 48,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 11,
+        "retry": false,
+        "wall_s": 2.2
+      }
+    }
+  },
+  "arpack_checks": {
+    "full": {
+      "lam2_ncv64": 0.996523720008678,
+      "arpack": {
+        "k": 8,
+        "ncv": 64,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 12,
+        "retry": false,
+        "wall_s": 3.2
+      }
+    },
+    "neck_script": {
+      "lam2_ncv64": 0.9998103338018385,
+      "arpack": {
+        "k": 8,
+        "ncv": 64,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 12,
+        "retry": false,
+        "wall_s": 3.7
+      }
+    },
+    "motor_script": {
+      "lam2_ncv64": 0.9957980758793082,
+      "arpack": {
+        "k": 8,
+        "ncv": 64,
+        "tol": 1e-08,
+        "maxiter": 6000,
+        "seed": 12,
+        "retry": false,
+        "wall_s": 3.2
+      }
+    }
+  },
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "3.0.2",
+    "pyarrow": "25.0.1",
+    "platform": "Linux-6.18.44-fc-v42-x86_64-with-glibc2.39",
+    "cpu_count": 2,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "date_utc": "2026-09-26T17:34:14Z"
+  }
+}

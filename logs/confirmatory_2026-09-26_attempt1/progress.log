@@ -1,0 +1,15 @@
+17:24:17  01_fetch_inputs  rc=0
+17:24:55  02_build_graph  rc=0
+17:32:15  03_verify_inputs  rc=0
+17:33:28  04_prep_neuropil  rc=0
+17:34:14  05_h1_gap  rc=0
+17:35:01  06_h2_floor  rc=0
+17:45:50  07_h3_depth  rc=0
+18:12:27  08_h4_confidence  rc=0
+18:13:05  09_h5_sign  rc=0
+H1 FAIL
+H2 PASS
+H3 FAIL
+H4 FAIL
+H5 PASS
+ALL DONE

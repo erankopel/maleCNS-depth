@@ -1,0 +1,18 @@
+=== 04_prep_neuropil: python3 prep_neuropil.py ===
+  batch 500/4759
+  batch 1000/4759
+  batch 1500/4759
+  batch 2000/4759
+  batch 2500/4759
+  batch 3000/4759
+  batch 3500/4759
+  batch 4000/4759
+  batch 4500/4759
+rows 311,833,243; rows with an annotated presynaptic neuron 295,069,014
+neurons with no synapse in the table: 124
+  primary neuropil LOP(L) : 8,105 neurons
+  primary neuropil LOP(R) : 8,541 neurons
+  primary neuropil EB     : 419 neurons
+saved /home/claude/maleCNS-depth/data/neuron_neuropil.npz
+[peakrun] wall 73.3 s  peak RSS 4346 MB  user 65.8 s  sys 5.4 s
+rc=0  wall=73s

@@ -39,4 +39,6 @@ date of this commit and of the Zenodo record made from the first release (tag `v
 - Registration record: GitHub release `v0.1.0-prereg` of commit cd16354 (26 Sep 2026, 15:56 UTC),
   archived by Zenodo as doi:10.5281/zenodo.22980248.
 - Freeze of the confirmatory scripts and of DEVIATIONS.md entries D7 and C1 to C8: release
-  `v0.2.0-frozen` (the next release; made before any of H1 to H5 is computed).
+  `v0.2.0-frozen` of commit 7eafd18 (26 Sep 2026, 17:18 UTC), archived by Zenodo as
+  doi:10.5281/zenodo.22981189. Made before any of H1 to H5 was computed.
+- Confirmatory run: 26 Sep 2026, 17:23 to 18:13 UTC, one attempt; RESULTS_2026-09-26.md.

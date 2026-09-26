@@ -1,0 +1,24 @@
+=== 07_h3_depth: python3 h3_depth.py ===
+structural check G5 = 157821: ok
+weight >= 5 giant SCC: n = 157,821, nnz = 6,120,084, max in- or out-degree D = 7,570; D u = 8.40e-13 per hop (slack 1e-09 per hop)
+stationary distribution: 6573 iterations, final L1 change 1.0e-13
+witness rows: 100 (100 distinct)
+r =   1   lower 1.0000   upper 1.0000   (hub floor 0.00e+00)   [9 s]
+r =   2   lower 1.0000   upper 1.0000   (hub floor 0.00e+00)   [20 s]
+r =   4   lower 1.0000   upper 1.0000   (hub floor 0.00e+00)   [35 s]
+r =   8   lower 0.9959   upper 0.9997   (hub floor 2.70e-04)   [57 s]
+r =  16   lower 0.9721   upper 0.9901   (hub floor 9.87e-03)   [94 s]
+r =  32   lower 0.9229   upper 0.9665   (hub floor 3.35e-02)   [161 s]
+r =  48   lower 0.8761   upper 0.9414   (hub floor 5.86e-02)   [229 s]
+r =  64   lower 0.8311   upper 0.9155   (hub floor 8.45e-02)   [297 s]
+r =  96   lower 0.7466   upper 0.8644   (hub floor 1.36e-01)   [430 s]
+r = 128   lower 0.6695   upper 0.8160   (hub floor 1.84e-01)   [561 s]
+saved /home/claude/maleCNS-depth/results/h3.json
+
+lower bound at r = 32: 0.9229 > 0.20: True
+first checkpoint with lower bound < 0.05: None (in [48, 96]): False
+H3 FAIL
+
+saved /home/claude/maleCNS-depth/results/h3_full.json
+[peakrun] wall 648.8 s  peak RSS 1889 MB  user 606.4 s  sys 41.9 s
+rc=0  wall=649s

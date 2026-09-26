@@ -260,3 +260,10 @@ C8. Environment: Python 3.11.15, numpy 2.4.4, scipy 1.17.1, pandas 3.0.2, pyarro
 (`code/confirmatory/requirements-confirmatory.txt`), with OPENBLAS_NUM_THREADS = OMP_NUM_THREADS =
 MKL_NUM_THREADS = 1. This is the environment on which the Sec. 4 reproduction matched; the runner
 checks it before starting.
+
+## Entry written 26 Sep 2026, after the confirmatory run
+
+R1. The confirmatory run (attempt 1, 17:23 to 18:13 UTC, after the freeze release v0.2.0-frozen of
+commit 7eafd18, archived as doi:10.5281/zenodo.22981189) completed without error. Every script ran
+once, no step was repeated, and no deviation from C1 to C8 occurred. Results are in
+RESULTS_2026-09-26.md.

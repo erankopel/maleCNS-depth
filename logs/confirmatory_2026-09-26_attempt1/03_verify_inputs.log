@@ -1,0 +1,8 @@
+=== 03_verify_inputs: python3 verify_inputs.py ===
+ok   md5 body-annotations.feather: 50a7718770c57220f160ba4f431ab89e
+ok   md5 body-nt.feather: 3d842b12fe5c49eefade528d7dd24a1f
+ok   md5 connectome-weights.feather: f30e9dcca25cfd021bf1e7b3d975599e
+ok   md5 syn-partners.feather: 58efcf712f8c4d4de5f2ad51e97def76
+ok   content sha256 of neuron_edges.npz (rebuilt by build_graph.py): cd6bbde8abf155fa746aaa64afc34f5c5b2454ac7867426a2a4972fc2566b0e8
+[peakrun] wall 439.6 s  peak RSS 257 MB  user 15.4 s  sys 2.6 s
+rc=0  wall=440s
