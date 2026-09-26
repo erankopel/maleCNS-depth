@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this pre-registration or code, please cite it as below."
+message: "If you use this pre-registration, code or manuscript, please cite it as below."
 title: "maleCNS-depth: pre-registration and analysis code for the certified information-breaking depth of the male Drosophila CNS connectome"
 authors:
   - family-names: Kopel
@@ -7,8 +7,8 @@ authors:
     orcid: "https://orcid.org/0000-0003-4657-8636"
     affiliation: "Tel Aviv University"
 license: MIT
-version: 0.3.0
-date-released: 2026-09-26
+version: 0.4.0
+date-released: 2026-09-27
 repository-code: "https://github.com/erankopel/maleCNS-depth"
 identifiers:
   - type: doi

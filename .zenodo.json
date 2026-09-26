@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "maleCNS-depth: pre-registration and analysis code for the certified information-breaking depth of the male Drosophila CNS connectome",
-  "description": "<p>Results of the confirmatory analysis of a pre-registered study of the synapse-flow Markov chain of the male <em>Drosophila</em> central nervous system connectome (male-cns v1.0, FlyEM and collaborators, CC-BY).</p><p>The five pre-registered hypotheses were run once, on 26 September 2026, after the freeze release v0.2.0-frozen (doi:10.5281/zenodo.22981189); the pre-registration is the registration record v0.1.0-prereg (doi:10.5281/zenodo.22980248). Verdicts against the frozen criteria: H2 passed, H5 passed as a sensitivity result, H1, H3 and H4 failed. This release adds the logs, result files and RESULTS_2026-09-26.md.</p>",
+  "description": "<p>Pre-registered study of the synapse-flow Markov chain of the male <em>Drosophila</em> central nervous system connectome (male-cns v1.0, FlyEM and collaborators, CC-BY).</p><p>Registration record: release v0.1.0-prereg (doi:10.5281/zenodo.22980248). Frozen confirmatory analysis: release v0.2.0-frozen (doi:10.5281/zenodo.22981189). The five pre-registered hypotheses were run once, on 26 September 2026: H2 passed, H5 passed as a sensitivity result, H1, H3 and H4 failed (RESULTS_2026-09-26.md, results/, logs/).</p><p>This release adds the exploratory analyses made after the confirmatory run, which were not pre-registered and change no verdict (EXPLORATORY_2026-09-26.md, code/exploratory/, exploratory/), and the manuscript draft (paper/, with the compiled PDF).</p>",
   "creators": [
     {
       "name": "Kopel, Eran",
@@ -25,5 +25,5 @@
     "reproducible research"
   ],
   "language": "eng",
-  "version": "0.3.0"
+  "version": "0.4.0"
 }
