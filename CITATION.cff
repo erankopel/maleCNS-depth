@@ -7,9 +7,13 @@ authors:
     orcid: "https://orcid.org/0000-0003-4657-8636"
     affiliation: "Tel Aviv University"
 license: MIT
-version: 0.1.0
+version: 0.2.0
 date-released: 2026-09-26
 repository-code: "https://github.com/erankopel/maleCNS-depth"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22980248"
+    description: "Registration record, release v0.1.0-prereg (26 Sep 2026)"
 keywords:
   - connectomics
   - Drosophila

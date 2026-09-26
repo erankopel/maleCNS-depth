@@ -33,3 +33,10 @@ date of this commit and of the Zenodo record made from the first release (tag `v
    connectome.
 2. Each hypothesis run once; logs, outputs and pass/fail against the frozen criteria committed.
 3. Exploratory work (PREREG Sec. 7 and anything added later) labelled as exploratory.
+
+## Records
+
+- Registration record: GitHub release `v0.1.0-prereg` of commit cd16354 (26 Sep 2026, 15:56 UTC),
+  archived by Zenodo as doi:10.5281/zenodo.22980248.
+- Freeze of the confirmatory scripts and of DEVIATIONS.md entries D7 and C1 to C8: release
+  `v0.2.0-frozen` (the next release; made before any of H1 to H5 is computed).
