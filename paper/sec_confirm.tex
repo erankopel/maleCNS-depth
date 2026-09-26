@@ -1,0 +1,104 @@
+\section{Confirmatory results}\label{sec:confirm}
+
+Table~\ref{tab:verdicts} lists every pre-registered criterion with the value obtained and the
+verdict. The reference values of the exploratory phase (at $w\ge1$) were reproduced to every digit
+printed in the pre-registration before the confirmatory run.
+
+\begin{table}[t]
+\centering
+\small
+\caption{The five pre-registered hypotheses, each run once after the freeze. $\lamtwo$: modulus of
+the second eigenvalue of the synapse-flow chain on the giant SCC; $\rho$: spectral radius of the
+signed map; PR: participation ratio; $\Dob(P^r)$: Dobrushin coefficient of the $r$-step chain.}
+\label{tab:verdicts}
+\begin{tabular}{@{}l>{\raggedright\arraybackslash}p{7.5cm}>{\raggedright\arraybackslash}p{3.4cm}l@{}}
+\toprule
+ & Criterion (frozen) & Value & Met \\
+\midrule
+H1 (i) & $\lamtwo$ at $w\ge5$ lies in $[0.90,0.97]$ & $0.996524$ & no \\
+H1 (ii) & removing ascending, descending and sensory-ascending neurons gives $1-\lamtwo<0.002$ & $0.000190$ & yes \\
+H1 (iii) & removing the motor neurons moves $\lamtwo$ by less than $0.01$ & $0.000726$ & yes \\
+\textbf{H1} & & & \textbf{fail} \\
+\addlinespace
+H2 (a) & with the floor $F$ (median input, 342 synapses), $\rho<0.85$ & $0.83484$ & yes \\
+H2 (b) & at least 10 of the top 20 modes have PR $>20$ & 19 of 20 & yes \\
+H2 (c) & descriptive: a top-20 mode with more than half its power on lobula-plate or ellipsoid-body neurons & mode 1, 99.3\,\% on the ellipsoid body & reported \\
+\textbf{H2} & & & \textbf{pass} \\
+\addlinespace
+H3 (1) & certified lower bound on $\Dob(P^{32})$ at $w\ge5$ exceeds $0.20$ & $0.9229$ & yes \\
+H3 (2) & first checkpoint with lower bound $<0.05$ lies in $[48,96]$ & none up to 128 ($0.6695$ at 128) & no \\
+\textbf{H3} & & & \textbf{fail} \\
+\addlinespace
+H4 & certified lower bound on $\Dob(P'^{32})$ over the confidence class at $c=0.70$ exceeds $0.10$ & no certificate ($-0.52$) & no \\
+H4 (clause) & largest level $c\in[0.51,0.95]$ at which the bound at $r=32$ exceeds $0.10$ & none (best: $0.071$ at $c=0.51$) & reported \\
+\textbf{H4} & & & \textbf{fail} \\
+\addlinespace
+H5 & $\rho$ changes by less than $0.02$ under the Pospisil convention & $0.000015$ & yes \\
+H5 & the carriers of the top six modes are unchanged & same six neurons & yes \\
+\textbf{H5} & sensitivity result & & \textbf{pass} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{H1: the gap at five synapses is an order of magnitude smaller than predicted.}
+At $w\ge1$ the chain has $\lamtwo=0.94503$, a spectral gap of $0.055$. At $w\ge5$ the prediction
+was a gap between $0.03$ and $0.10$; the observed value is $\lamtwo=0.996524$, a gap of $0.0035$.
+The two knock-out predictions held: without the ascending, descending and sensory-ascending neurons
+the giant SCC (153{,}784 neurons) is still two-sided, held together by 18 residual neck neurons, and
+has $1-\lamtwo=0.00019$; without the motor neurons $\lamtwo$ moves by $0.0007$.
+
+\paragraph{H2 and H5: the photoreceptor modes are a normalisation effect.}
+The leading eigenvalues of the signed map come in near-equal pairs of opposite sign
+($-0.9151$, $+0.9137$, $-0.9122$, $+0.9098$), each mode carried by a pair of R7/R8 photoreceptors
+(participation ratio 2.0 to 2.4). These photoreceptors receive few synapses (the six carriers have
+2 to 43 input synapses from partners of nonzero sign, against 63 to 174 outputs), so postsynaptic
+normalisation turns a reciprocal pair into a two-neuron loop of gain close to one. With the input floored at the
+median, $F=342$, the spectral radius falls to $0.83484$ and 19 of the 20 leading modes extend over
+more than 20 neurons. The leading floored mode is carried by GABAergic ellipsoid-body ring neurons
+(ER3d\_b and ER3p\_a, participation ratio 96.6, 99.3\,\% of its power on neurons whose primary
+neuropil is the ellipsoid body), and it is the ninth mode of the unfloored map with the same
+eigenvalue: the floor removes the photoreceptor loops above it and leaves it untouched. Six of the
+next eight modes are ring-neuron modes as well (ER4d, ER3p\_a, ER3m and three on ER3w\_b) and two
+are on the leg sensory neurons LgAG1; the remaining modes of the top 20 are on Kenyon cells,
+antennal-lobe projection neurons and sensory neurons of the cord. The result is the same with the floor at
+700 synapses (18 of 20 modes extended). Under the Pospisil sign convention the unfloored spectral
+radius changes by $1.5\times10^{-5}$ and the same six neurons carry the top six modes (H5).
+
+\paragraph{H3: certified slow mixing.}
+At $w\ge5$ the certified bounds are $0.923\le\Dob(P^{32})\le0.967$ and
+$0.669\le\Dob(P^{128})\le0.816$ (Figure~\ref{fig:depth}): after 128 synaptic steps two starting
+neurons can still be told apart with total-variation distance at least $0.669$. The first criterion held and the second failed,
+because the bound never dropped below $0.05$. This is consistent with H1: at $\lamtwo=0.9965$ a
+deviation decays by a factor ten only after several hundred steps.
+
+\paragraph{H4: the worst-case certificate does not survive the confidence class.}
+All 123{,}954{,}262 synapse-partner rows inside $G$ matched the connection weights exactly, and none
+had a confidence below $0.5$. On average 14.4\,\% of a neuron's output synapses (12.3\,\% weighted by
+the stationary distribution) have $\min(\text{conf}_\text{pre},\text{conf}_\text{post})<0.7$. With
+per-row radii of this size, the certified lower bound of Lemma~\ref{lem:robust} is $0.821$ at $r=2$
+and $0.396$ at $r=4$ and gives no certificate from $r=8$ on (Table~\ref{tab:h4}). Even at $c=0.51$,
+where on average 0.5\,\% of a neuron's synapses lie below the level, the bound is $0.071$ at $r=32$, short of the
+pre-registered $0.10$. As the pre-registration requires us to state: the depth result is not
+certifiably robust to reconstruction uncertainty at the 0.7 level, nor at any level tested.
+
+\begin{table}[t]
+\centering
+\small
+\caption{H4: certified lower bounds on $\Dob(P'^r)$ over the confidence class at level $c$, and over
+the uniform class $C(0.05)$, with 100 witness rows on $G$. A negative value means that no certificate
+is obtained. The last row is the nominal bound for $P$ itself.}
+\label{tab:h4}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+$r$ & 1 & 2 & 4 & 8 & 16 & 32 & 48 \\
+\midrule
+$c=0.51$ & 1.000 & 0.997 & 0.977 & 0.860 & 0.555 & 0.071 & $-0.015$ \\
+$c=0.55$ & 1.000 & 0.984 & 0.894 & 0.595 & $-0.028$ & $-0.071$ & $-0.071$ \\
+$c=0.60$ & 1.000 & 0.941 & 0.759 & 0.264 & $-0.192$ & $-0.198$ & $-0.199$ \\
+$c=0.70$ & 1.000 & 0.821 & 0.396 & $-0.470$ & $-0.511$ & $-0.520$ & $-0.522$ \\
+$C(0.05)$ & 0.789 & 0.579 & 0.156 & $-0.441$ & $-0.481$ & $-0.502$ & $-0.508$ \\
+\addlinespace
+nominal $P$ & 1.000 & 1.000 & 0.998 & 0.936 & 0.707 & 0.312 & 0.127 \\
+\bottomrule
+\end{tabular}
+\end{table}

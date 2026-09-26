@@ -1,0 +1,101 @@
+[
+ {
+  "member": "P",
+  "c": 0.5,
+  "scc_w5": 157821,
+  "trap_in_scc": 11,
+  "trap_out_synapses_w5_to_rest": 43.0,
+  "trap_in_synapses_w5_from_rest": 19378.0,
+  "trap_out_synapses_w5_total": 503.0,
+  "trap_mass_in_scc": 0.1276462488575114
+ },
+ {
+  "member": "M(0.60)",
+  "c": 0.6,
+  "scc_w5": 157493,
+  "trap_in_scc": 11,
+  "trap_out_synapses_w5_to_rest": 43.0,
+  "trap_in_synapses_w5_from_rest": 18370.0,
+  "trap_out_synapses_w5_total": 496.0,
+  "trap_mass_in_scc": 0.11093367344892521
+ },
+ {
+  "member": "M(0.70)",
+  "c": 0.7,
+  "scc_w5": 156995,
+  "trap_in_scc": 11,
+  "trap_out_synapses_w5_to_rest": 43.0,
+  "trap_in_synapses_w5_from_rest": 16823.0,
+  "trap_out_synapses_w5_total": 489.0,
+  "trap_mass_in_scc": 0.1018987928471915
+ },
+ {
+  "member": "M(0.80)",
+  "c": 0.8,
+  "scc_w5": 155173,
+  "trap_in_scc": 1,
+  "trap_out_synapses_w5_to_rest": 15.0,
+  "trap_in_synapses_w5_from_rest": 11712.0,
+  "trap_out_synapses_w5_total": 226.0,
+  "trap_mass_in_scc": 1.3606249062898706e-05
+ },
+ {
+  "member": "M(0.90)",
+  "c": 0.9,
+  "scc_w5": 149794,
+  "trap_in_scc": 0,
+  "trap_out_synapses_w5_to_rest": 0.0,
+  "trap_in_synapses_w5_from_rest": 4930.0,
+  "trap_out_synapses_w5_total": 170.0
+ },
+ {
+  "member": "B(1)",
+  "c": null,
+  "scc_w5": 156541,
+  "trap_in_scc": 2,
+  "trap_out_synapses_w5_to_rest": 35.0,
+  "trap_in_synapses_w5_from_rest": 15673.0,
+  "trap_out_synapses_w5_total": 409.0,
+  "trap_mass_in_scc": 2.0384783494544823e-05
+ },
+ {
+  "member": "B(2)",
+  "c": null,
+  "scc_w5": 156635,
+  "trap_in_scc": 8,
+  "trap_out_synapses_w5_to_rest": 21.0,
+  "trap_in_synapses_w5_from_rest": 15638.0,
+  "trap_out_synapses_w5_total": 368.0,
+  "trap_mass_in_scc": 0.07812946265009403
+ },
+ {
+  "member": "B(3)",
+  "c": null,
+  "scc_w5": 156601,
+  "trap_in_scc": 3,
+  "trap_out_synapses_w5_to_rest": 33.0,
+  "trap_in_synapses_w5_from_rest": 15730.0,
+  "trap_out_synapses_w5_total": 393.0,
+  "trap_mass_in_scc": 4.0846207377256706e-05
+ },
+ {
+  "member": "B(4)",
+  "c": null,
+  "scc_w5": 156615,
+  "trap_in_scc": 11,
+  "trap_out_synapses_w5_to_rest": 32.0,
+  "trap_in_synapses_w5_from_rest": 15596.0,
+  "trap_out_synapses_w5_total": 414.0,
+  "trap_mass_in_scc": 0.10729595262397904
+ },
+ {
+  "member": "B(5)",
+  "c": null,
+  "scc_w5": 156593,
+  "trap_in_scc": 6,
+  "trap_out_synapses_w5_to_rest": 26.0,
+  "trap_in_synapses_w5_from_rest": 15713.0,
+  "trap_out_synapses_w5_total": 397.0,
+  "trap_mass_in_scc": 0.001319993929263174
+ }
+]

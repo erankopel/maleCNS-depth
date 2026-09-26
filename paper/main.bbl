@@ -1,0 +1,197 @@
+\begin{thebibliography}{27}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Lin et~al.(2024)]{lin2024}
+Albert Lin et~al.
+\newblock Network statistics of the whole-brain connectome of {Drosophila}.
+\newblock \emph{Nature}, 634\penalty0 (8032):\penalty0 153--165, 2024.
+\newblock \doi{10.1038/s41586-024-07968-y}.
+
+\bibitem[Pospisil et~al.(2024)]{pospisil2024}
+Dean~A. Pospisil et~al.
+\newblock The fly connectome reveals a path to the effectome.
+\newblock \emph{Nature}, 634\penalty0 (8032):\penalty0 201--209, 2024.
+\newblock \doi{10.1038/s41586-024-07982-0}.
+
+\bibitem[Shiu et~al.(2024)]{shiu2024}
+Philip~K. Shiu et~al.
+\newblock A {Drosophila} computational brain model reveals sensorimotor
+  processing.
+\newblock \emph{Nature}, 634\penalty0 (8032):\penalty0 210--219, 2024.
+\newblock \doi{10.1038/s41586-024-07763-9}.
+
+\bibitem[Schlegel et~al.(2021)]{schlegel2021}
+Philipp Schlegel et~al.
+\newblock Information flow, cell types and stereotypy in a full olfactory
+  connectome.
+\newblock \emph{eLife}, 10:\penalty0 e66018, 2021.
+\newblock \doi{10.7554/eLife.66018}.
+
+\bibitem[Winding et~al.(2023)]{winding2023}
+Michael Winding et~al.
+\newblock The connectome of an insect brain.
+\newblock \emph{Science}, 379\penalty0 (6636):\penalty0 eadd9330, 2023.
+\newblock \doi{10.1126/science.add9330}.
+
+\bibitem[Bates et~al.(2026)]{bates2026}
+Alexander~S. Bates et~al.
+\newblock Distributed control circuits across a brain-and-cord connectome.
+\newblock \emph{Nature}, 656\penalty0 (8129):\penalty0 957--970, 2026.
+\newblock \doi{10.1038/s41586-026-10735-w}.
+
+\bibitem[Berg et~al.(2026)]{berg2026}
+Stuart Berg et~al.
+\newblock Sexual dimorphism in the complete {Drosophila} male central nervous
+  system connectome.
+\newblock \emph{Cell}, 189\penalty0 (18):\penalty0 5504--5526.e15, 2026.
+\newblock \doi{10.1016/j.cell.2026.08.015}.
+
+\bibitem[Buhmann et~al.(2021)]{buhmann2021}
+Julia Buhmann et~al.
+\newblock Automatic detection of synaptic partners in a whole-brain
+  {Drosophila} electron microscopy data set.
+\newblock \emph{Nature Methods}, 18\penalty0 (7):\penalty0 771--774, 2021.
+\newblock \doi{10.1038/s41592-021-01183-7}.
+
+\bibitem[{FlyEM Project Team and collaborators}(2026)]{malecnsdata}
+{FlyEM Project Team and collaborators}.
+\newblock Male {CNS} connectome, version 1.0, flat connectome release (minimum
+  synapse confidence 0.5).
+\newblock \url{https://male-cns.janelia.org/download/}, 2026.
+\newblock Public bucket
+  gs://flyem-male-cns/v1.0/connectome-data/flat-connectome/; accessed 26 Sep
+  2026.
+
+\bibitem[Dobrushin(1956)]{dobrushin1956}
+R.~L. Dobrushin.
+\newblock Central limit theorem for nonstationary {Markov} chains. {I}.
+\newblock \emph{Theory of Probability \& Its Applications}, 1\penalty0
+  (1):\penalty0 65--80, 1956.
+\newblock \doi{10.1137/1101006}.
+
+\bibitem[Seneta(2006)]{seneta2006}
+E.~Seneta.
+\newblock \emph{Non-negative Matrices and {Markov} Chains}.
+\newblock Springer Series in Statistics. Springer, New York, 2nd edition, 2006.
+\newblock \doi{10.1007/0-387-32792-4}.
+\newblock Revised printing of the second edition (1981).
+
+\bibitem[Levin and Peres(2017)]{levin2017}
+David~A. Levin and Yuval Peres.
+\newblock \emph{{Markov} Chains and Mixing Times}.
+\newblock American Mathematical Society, Providence, RI, 2nd edition, 2017.
+\newblock \doi{10.1090/mbk/107}.
+
+\bibitem[Kopel(2026{\natexlab{a}})]{kopel2026a}
+Eran Kopel.
+\newblock Certified coherent, informative, and non-entanglement-breaking fixed
+  points of future-referential quantum feedback.
+\newblock arXiv:2608.13764 [quant-ph], 2026{\natexlab{a}}.
+
+\bibitem[Nosek et~al.(2018)Nosek, Ebersole, DeHaven, and Mellor]{nosek2018}
+Brian~A. Nosek, Charles~R. Ebersole, Alexander~C. DeHaven, and David~T. Mellor.
+\newblock The preregistration revolution.
+\newblock \emph{Proceedings of the National Academy of Sciences}, 115\penalty0
+  (11):\penalty0 2600--2606, 2018.
+\newblock \doi{10.1073/pnas.1708274114}.
+
+\bibitem[Kopel(2026{\natexlab{b}})]{kopel2026reg}
+Eran Kopel.
+\newblock {maleCNS-depth}: pre-registration and analysis code for the certified
+  information-breaking depth of the male {Drosophila} {CNS} connectome, version
+  0.1.0 (registration record).
+\newblock Zenodo,
+  \href{https://doi.org/10.5281/zenodo.22980248}{doi:10.5281/zenodo.22980248},
+  2026{\natexlab{b}}.
+
+\bibitem[Kopel(2026{\natexlab{c}})]{kopel2026freeze}
+Eran Kopel.
+\newblock {maleCNS-depth}: pre-registration and analysis code for the certified
+  information-breaking depth of the male {Drosophila} {CNS} connectome, version
+  0.2.0 (frozen confirmatory analysis).
+\newblock Zenodo,
+  \href{https://doi.org/10.5281/zenodo.22981189}{doi:10.5281/zenodo.22981189},
+  2026{\natexlab{c}}.
+
+\bibitem[Dorkenwald et~al.(2024)]{dorkenwald2024}
+Sven Dorkenwald et~al.
+\newblock Neuronal wiring diagram of an adult brain.
+\newblock \emph{Nature}, 634\penalty0 (8032):\penalty0 124--138, 2024.
+\newblock \doi{10.1038/s41586-024-07558-y}.
+
+\bibitem[Schlegel et~al.(2024)]{schlegel2024}
+Philipp Schlegel et~al.
+\newblock Whole-brain annotation and multi-connectome cell typing of
+  {Drosophila}.
+\newblock \emph{Nature}, 634\penalty0 (8032):\penalty0 139--152, 2024.
+\newblock \doi{10.1038/s41586-024-07686-5}.
+
+\bibitem[Lehoucq et~al.(1998)Lehoucq, Sorensen, and Yang]{lehoucq1998}
+R.~B. Lehoucq, D.~C. Sorensen, and C.~Yang.
+\newblock \emph{{ARPACK} Users' Guide: Solution of Large-Scale Eigenvalue
+  Problems with Implicitly Restarted {Arnoldi} Methods}.
+\newblock Society for Industrial and Applied Mathematics, Philadelphia, 1998.
+\newblock \doi{10.1137/1.9780898719628}.
+
+\bibitem[Higham(2002)]{higham2002}
+Nicholas~J. Higham.
+\newblock \emph{Accuracy and Stability of Numerical Algorithms}.
+\newblock Society for Industrial and Applied Mathematics, Philadelphia, 2nd
+  edition, 2002.
+\newblock \doi{10.1137/1.9780898718027}.
+
+\bibitem[Chung(2005)]{chung2005}
+Fan Chung.
+\newblock Laplacians and the {Cheeger} inequality for directed graphs.
+\newblock \emph{Annals of Combinatorics}, 9\penalty0 (1):\penalty0 1--19, 2005.
+\newblock \doi{10.1007/s00026-005-0237-z}.
+
+\bibitem[Deuflhard and Weber(2005)]{deuflhard2005}
+Peter Deuflhard and Marcus Weber.
+\newblock Robust {Perron} cluster analysis in conformation dynamics.
+\newblock \emph{Linear Algebra and its Applications}, 398:\penalty0 161--184,
+  2005.
+\newblock \doi{10.1016/j.laa.2004.10.026}.
+
+\bibitem[Takemura et~al.(2024)]{takemura2024}
+Shin-ya Takemura et~al.
+\newblock A connectome of the male {Drosophila} ventral nerve cord.
+\newblock \emph{eLife}, 13:\penalty0 RP97769, 2024.
+\newblock \doi{10.7554/eLife.97769}.
+\newblock Reviewed preprint.
+
+\bibitem[Marin et~al.(2024)]{marin2024}
+Elizabeth~C. Marin et~al.
+\newblock Systematic annotation of a complete adult male {Drosophila} nerve
+  cord connectome reveals principles of functional organisation.
+\newblock \emph{eLife}, 13:\penalty0 RP97766, 2024.
+\newblock \doi{10.7554/eLife.97766}.
+\newblock Reviewed preprint.
+
+\bibitem[Cheong et~al.(2026)]{cheong2026}
+Han S.~J. Cheong et~al.
+\newblock Organization of circuits linking descending input to motor output in
+  the {Drosophila} {Male Adult Nerve Cord} connectome.
+\newblock \emph{eLife}, 13:\penalty0 RP96084, 2026.
+\newblock \doi{10.7554/eLife.96084}.
+
+\bibitem[Hulse et~al.(2021)]{hulse2021}
+Brad~K. Hulse et~al.
+\newblock A connectome of the {Drosophila} central complex reveals network
+  motifs suitable for flexible navigation and context-dependent action
+  selection.
+\newblock \emph{eLife}, 10:\penalty0 e66039, 2021.
+\newblock \doi{10.7554/eLife.66039}.
+
+\bibitem[{FlyWire Consortium}(2024)]{flywire783}
+{FlyWire Consortium}.
+\newblock {FlyWire} whole-brain connectome connectivity data, version 783.0.
+\newblock Zenodo dataset,
+  \href{https://doi.org/10.5281/zenodo.10676866}{doi:10.5281/zenodo.10676866},
+  2024.
+
+\end{thebibliography}

@@ -1,0 +1,45 @@
+\section{Introduction}\label{sec:intro}
+
+Whole-nervous-system connectomes invite dynamical summaries. Random walks on the wiring diagram
+identify neurons that attract or repel flow \cite{lin2024}; eigen-decompositions of linear models
+built from synapse counts propose ``eigencircuits'' as candidate units of computation
+\cite{pospisil2024}; spiking models built from synapse counts reproduce sensorimotor responses
+\cite{shiu2024}; input-normalised influence models, maximum-flow analyses and layer
+assignments describe how sensory signals reach motor neurons \cite{schlegel2021,winding2023,bates2026,berg2026}.
+These summaries are usually reported as point estimates computed once, without a prediction stated
+in advance, without a guarantee on their numerical accuracy, and without a test of how much they
+depend on the uncertainty of the reconstruction itself, although automated synapse detection
+assigns every synapse a confidence score \cite{buhmann2021,berg2026}.
+
+The complete connectome of the male \Dros{} central nervous system \cite{berg2026,malecnsdata},
+which joins the brain and the ventral nerve cord (VNC), makes a whole-CNS version of these questions
+possible. (A female brain-and-cord connectome, BANC, appeared shortly before \cite{bates2026}; it was
+analysed with an unsigned influence model, spectral clustering and centrality, not with the mixing
+questions asked here.) We ask a simple question of the synapse-flow random walk, in which a walker
+at a neuron moves to a postsynaptic partner with probability proportional to the number of
+synapses: after how many synaptic steps has the walk forgotten where it started? The quantity that
+answers it is the Dobrushin ergodicity coefficient $\Dob(P^r)$ of the $r$-step chain
+\cite{dobrushin1956,seneta2006}, the largest total-variation distance that two starting neurons can
+still keep after $r$ steps \cite{levin2017}. The number of steps after which it becomes small is the
+classical counterpart of the entanglement-breaking index of a quantum channel, the number of
+self-compositions after which a channel forgets its input \cite{kopel2026a}. Unlike a spectral gap, $\Dob(P^r)$ at finite $r$ can be bounded from both sides
+by certified numerical bounds, and the bounds can be carried through a stated class of
+reconstruction errors.
+
+We did this as a pre-registered study \cite{nosek2018}. An exploratory analysis of the male CNS
+(19 September 2026) produced five hypotheses with numerical pass and fail criteria, about the
+spectral gap of the chain and its dependence on the neck connective (H1), the localisation of the
+leading modes of an input-normalised signed linear map (H2), the certified mixing depth at a
+threshold of five synapses per connection (H3), the robustness of the certified depth of the
+one-synapse chain to per-synapse confidence (H4), and the dependence of the signed spectrum on the neurotransmitter sign convention
+(H5). The pre-registration was made public on 26 September 2026 \cite{kopel2026reg}, the
+confirmatory scripts were tested on synthetic data only and frozen \cite{kopel2026freeze}, and each
+hypothesis was then run once. Section~\ref{sec:confirm} reports all five against their frozen
+criteria: H2 and H5 held, H1, H3 and H4 failed. Section~\ref{sec:explore} reports analyses that we
+made afterwards to understand the failures; they are exploratory and labelled as such. They show
+that the slowest mode of the chain at the five-synapse threshold is carried by eleven neurons of the
+cord, seven of them efferent neurons of the mesothoracic neuromere, that become a near-absorbing set
+once weak connections are dropped, that the same kind of boundary set carries the slowest mode of the FlyWire female brain at one
+synapse \cite{dorkenwald2024,schlegel2024}, and that chains built from the confidence data change the depth
+profile far less than the worst-case certificate allows, most of whose slack lies in the step-by-step
+accumulation of perturbations rather than in the radius assigned to each neuron.

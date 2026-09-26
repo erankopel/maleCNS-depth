@@ -1,0 +1,55 @@
+\section{Discussion}\label{sec:discussion}
+
+\paragraph{What the pre-registered tests established.}
+Two predictions held. The two-neuron photoreceptor modes that lead the spectrum of the
+input-normalised signed map are an artefact of dividing by very small inputs (H2), and they do not
+depend on the sign convention (H5). A floor at the median input removes them and leaves extended
+modes of GABAergic ellipsoid-body ring neurons in the lead, the kind of circuit that Pospisil et al.\
+found among the eigencircuits of the unnormalised female-brain matrix \cite{pospisil2024}. Linear
+models and graph traversals that normalise by postsynaptic input \cite{schlegel2021,bates2026}
+inherit this sensitivity at
+their low-input neurons, which are often sensory; reporting the input weights of the carriers of any
+leading mode is a cheap guard. Three predictions failed. The spectral-gap and depth predictions at
+the five-synapse threshold (H1 (i), H3) were set by values of the weak-threshold chain, and the chain
+at five synapses turned out to be an order of magnitude slower; the two knock-out predictions of
+H1 (ii) and (iii) held. The certificate of robustness to reconstruction uncertainty
+(H4) failed at every confidence level tested.
+
+\paragraph{Boundary sets dominate slow modes.}
+The exploratory analyses give one explanation for both depth failures, and it is a caution for any
+random-walk analysis of a connectome. A random walk normalised within the reconstructed graph
+treats every neuron as if all its outputs were in the graph. Efferent and motor neurons, whose main
+targets are outside the CNS, and neurons at an incompletely reconstructed edge of the volume, are
+left with a few within-graph exits; once weak connections are dropped these can close almost
+completely. Eleven neurons of the male cord, seven of them mesothoracic efferent neurons, do this
+at five synapses, and seven neurons at the lamina of the FlyWire brain do it at one. Such sets set $\lamtwo$ and any mixing time derived
+from it, whatever their size, and they set certified depth bounds when they carry stationary mass.
+Three remedies follow: add an explicit exit state that receives the synapses a neuron makes outside
+the graph (the male CNS tables record synapses to non-neuron bodies, which makes this possible),
+report results with boundary classes removed, and report depth profiles with the witness sets and
+stationary masses that attain them rather than a single eigenvalue. The threshold matters as much:
+the same connectome gives $\lamtwo=0.945$ at one synapse and $0.9965$ at five.
+
+\paragraph{Certificates and reconstruction uncertainty.}
+The failure of H4 is not evidence that the depth profile is fragile. Every chain that we built
+from the confidence data, including vertices of the class that remove every synapse below the level,
+moved the witness distances after 32 steps by at most 0.017 at the pre-registered level, and by less
+than 0.08 even after half of all synapses were removed, where the certificate allows changes of
+order one. Sharpening the row radius (Lemma~\ref{lem:sharp}) recovers only part
+of the gap; most of it is lost in the step-by-step accumulation of Lemma~\ref{lem:robust}, which
+cannot use the cancellation between the perturbations of different rows. The certificate cannot rule
+out that some adversarial member of the class moves the profile much further, and whether one exists
+is open. A useful certificate at the depths that matter would have to exploit that cancellation, or
+restrict the class to what detection errors can plausibly do; until then, robustness of connectome
+summaries to reconstruction uncertainty can be shown by resampling, as in Table~\ref{tab:members},
+but not certified.
+
+\paragraph{Limitations.}
+The confidence class models false detections only; missing synapses, which incomplete proofreading
+makes common \cite{berg2026}, are not in it, and a class that allowed them would be larger. Only the
+bounds on $\Dob(P^r)$ are certified; eigenvalues were computed by ARPACK to a tolerance of
+$10^{-8}$ and are not. The chains are not reversible, so the sweep cuts locate metastable sets
+heuristically \cite{chung2005,deuflhard2005}. The FlyWire comparison differs in sex, reconstruction
+pipeline and synapse detection. Most of all, the synapse-flow chain is a structural object: it says
+how a walker that follows synapses spreads over the wiring diagram, not how activity spreads in a
+fly.

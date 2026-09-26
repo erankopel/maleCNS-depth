@@ -1,0 +1,29 @@
+
+=== weight >= 5: n = 157,821; lambda_1 = 1.000000+0.000000j, lambda_2 = 0.996524+0.000000j, lambda_3 = 0.980617+0.000000j; left lambda_2 = 0.996524+0.000000j
+imaginary parts: v2 0.0e+00, u2 0.0e+00
+best sweep cut: |S| = 11 neurons, stationary mass 0.1276, conductance 3.51e-03; escape per hop 3.51e-03 (small side), 5.13e-04 (rest); two-block prediction 1 - p - q = 0.995980 vs lambda_2 0.996524
+  superclass        {'vnc_efferent': 7, 'vnc_intrinsic': 3, 'vnc_motor': 1}
+  side_of_cns       {'cord': 11}
+  soma_neuromere    {'T2': 7, 'A1': 3, 'T1': 1}
+  soma_side         {'M': 7, 'R': 3, 'L': 1}
+  primary_neuropil  {'WTct(UTct-T2)(L)': 6, 'IntTct': 2, 'WTct(UTct-T2)(R)': 2, 'LegNp(T1)(R)': 1}
+  class             {'?': 11}
+  type              {'EN00B015': 2, 'EN00B011': 2, 'IN03B088': 2, 'EN00B008': 1, 'EN00B001': 1, 'IN19A061': 1, 'MNad21': 1, 'mesVUM-MJ': 1}
+  left eigenvector shares by side: {'brain': {'pos_share': 0.11964360047347512, 'neg_share': 0.0004696059947203967}, 'cord': {'pos_share': 0.8156019024800277, 'neg_share': 0.997035811884425}, 'neck': {'pos_share': 0.06475449704649704, 'neg_share': 0.0024945821208548014}}
+  top left-eigenvector carriers: EN00B001/vnc_efferent/T2/M -0.11030; EN00B011/vnc_efferent/T2/M -0.10235; mesVUM-MJ/vnc_efferent/T2/M -0.09137; EN00B015/vnc_efferent/T2/M -0.06690; EN00B011/vnc_efferent/T2/M -0.06045; EN00B015/vnc_efferent/T2/M -0.05303; Sternal posterior rotator MN/vnc_motor/T2/L +0.02681; Sternal posterior rotator MN/vnc_motor/T2/L +0.02554
+
+=== weight >= 1: n = 165,314; lambda_1 = 1.000000+0.000000j, lambda_2 = 0.945027+0.000000j, lambda_3 = 0.917827+0.000000j; left lambda_2 = 0.945027+0.000000j
+imaginary parts: v2 0.0e+00, u2 0.0e+00
+best sweep cut: |S| = 727 neurons, stationary mass 0.0047, conductance 1.16e-01; escape per hop 1.16e-01 (small side), 5.47e-04 (rest); two-block prediction 1 - p - q = 0.883310 vs lambda_2 0.945027
+  superclass        {'cb_intrinsic': 590, 'visual_projection': 121, 'ol_intrinsic': 13, 'ol_sensory': 3}
+  side_of_cns       {'brain': 727}
+  soma_neuromere    {'?': 719, 'CG': 8}
+  soma_side         {'L': 368, 'R': 356, '?': 3}
+  primary_neuropil  {'EB': 414, 'AOTU(R)': 59, 'ME(L)': 54, 'BU(L)': 52, 'AOTU(L)': 48, 'BU(R)': 45, 'ME(R)': 39, 'LAL(L)': 7, 'NO': 4, 'LAL(R)': 3, 'PB': 2}
+  class             {'CX': 426, '?': 298, 'visual': 3}
+  type              {'MeTu2a': 70, 'EPG': 46, 'MeTu2b': 31, 'ER4d': 26, 'TuBu03': 23, 'PEN_b(PEN2)': 22, 'ER5': 21, 'TuBu07': 21, 'TuBu08': 21, 'TuBu09': 21, 'PEN_a(PEN1)': 20, 'ER2_c': 20, 'ER3d_b': 20, 'ER3m': 18, 'EL': 18, 'ER3w_b': 18, 'PEG': 18, 'ER3a_a': 15, 'TuBu10': 15, 'ER3p_a': 14}
+  left eigenvector shares by side: {'brain': {'pos_share': 0.0062424784926980925, 'neg_share': 0.9425953297495425}, 'cord': {'pos_share': 0.929059282364968, 'neg_share': 0.007099315203439238}, 'neck': {'pos_share': 0.06469823914233408, 'neg_share': 0.05030535504701834}}
+  top left-eigenvector carriers: Pleural remotor/abductor MN/vnc_motor/T3/R +0.00145; Sternal posterior rotator MN/vnc_motor/T2/L +0.00140; Pleural remotor/abductor MN/vnc_motor/T2/L +0.00128; Fe reductor MN/vnc_motor/T3/L +0.00125; Sternotrochanter MN/vnc_motor/T3/R +0.00122; Fe reductor MN/vnc_motor/T3/R +0.00119; Sternotrochanter MN/vnc_motor/T3/L +0.00117; APL/cb_intrinsic/?/R -0.00113
+
+the weight >= 5 cut (11 neurons in G) in the weight >= 1 chain: stationary mass 0.0043, escape per hop 2.91e-01; synapses leaving the set 617 (378 on edges >= 5), entering 13,366 (10,711 on edges >= 5)
+saved /home/claude/maleCNS-depth/code/exploratory/../../exploratory/results/e1_slow_mode.json

@@ -1,0 +1,65 @@
+{
+ "label": "male CNS, brain only",
+ "w1": {
+  "n_scc": 145035,
+  "edges": 21852255,
+  "lam2": 0.9255911552598804,
+  "lam3": 0.9021826462963358,
+  "top1pct_mass": 0.3524286060994805,
+  "top10pct_mass": 0.787686438932645,
+  "entropy_bits": 14.323754321017926,
+  "cut_size": 1416,
+  "cut_mass": 0.0178850085927433,
+  "cut_conductance": 0.11428678204351701,
+  "two_block_prediction": 0.8836319748263312,
+  "cut_composition": {
+   "visual_projection:MeTu3c": 158,
+   "ol_sensory:R7d": 75,
+   "visual_projection:MeTu3b": 74,
+   "visual_projection:MeTu2a": 70,
+   "ol_intrinsic:Dm-DRA1": 49,
+   "cb_intrinsic:EPG": 46,
+   "visual_projection:MeTu4e": 43,
+   "visual_projection:MeTu3a": 42,
+   "cb_intrinsic:Delta7": 40,
+   "visual_projection:MeTu4d": 40
+  },
+  "certified_lower": {
+   "8": 0.8536125547684129,
+   "16": 0.4511923583201195,
+   "32": 0.11168855723479666,
+   "64": 0.006850293674870391
+  }
+ },
+ "w5": {
+  "n_scc": 139150,
+  "edges": 5151054,
+  "lam2": 0.9317925250685665,
+  "lam3": 0.9142321158485076,
+  "top1pct_mass": 0.4794413580370458,
+  "top10pct_mass": 0.8538808719486023,
+  "entropy_bits": 13.27086661456184,
+  "cut_size": 1495,
+  "cut_mass": 0.015020641850718691,
+  "cut_conductance": 0.10542826060763907,
+  "two_block_prediction": 0.8929639898184718,
+  "cut_composition": {
+   "visual_projection:MeTu3c": 160,
+   "ol_intrinsic:Mi15": 155,
+   "visual_projection:MeTu3b": 78,
+   "ol_sensory:R7d": 71,
+   "visual_projection:MeTu2a": 70,
+   "ol_intrinsic:Dm-DRA1": 50,
+   "cb_intrinsic:EPG": 46,
+   "visual_projection:MeTu3a": 42,
+   "ol_intrinsic:Cm14": 39,
+   "visual_projection:MeTu4e": 36
+  },
+  "certified_lower": {
+   "8": 0.895207358757038,
+   "16": 0.5489981495150016,
+   "32": 0.165138516349389,
+   "64": 0.01611131858169095
+  }
+ }
+}

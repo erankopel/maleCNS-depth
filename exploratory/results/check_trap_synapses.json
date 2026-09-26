@@ -1,0 +1,16 @@
+{
+ "synapses_out": 299,
+ "synapses_out_on_edges_ge5": 43,
+ "synapses_in": 21846,
+ "synapses_in_on_edges_ge5": 19378,
+ "synapses_inside": 514,
+ "synapses_inside_on_edges_ge5": 460,
+ "edges_out": 209,
+ "edges_out_ge5": 6,
+ "csr_check": [
+  299,
+  43,
+  21846,
+  19378
+ ]
+}

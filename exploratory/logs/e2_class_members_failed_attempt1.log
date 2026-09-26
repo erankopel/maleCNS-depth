@@ -1,0 +1,12 @@
+witness rows: 100 (100 distinct)
+P (all synapses, minconf 0.5)      synapses 123,954,262  row TV mean 0.000  lam2 w>=1 0.945027 (SCC 165,314)  w>=5 0.996524 (SCC 157,821)  max d_32 0.3122  [208 s]
+Traceback (most recent call last):
+  File "/home/claude/maleCNS-depth/code/exploratory/e2_class_members.py", line 106, in <module>
+    results.append(run(f'M({c:.2f}): rows below {c:.2f} removed', wp)[0])
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/claude/maleCNS-depth/code/exploratory/e2_class_members.py", line 81, in run
+    P = row_stochastic(Ap)
+        ^^^^^^^^^^^^^^^^^^
+  File "/home/claude/maleCNS-depth/code/exploratory/../confirmatory/common.py", line 172, in row_stochastic
+    raise ValueError('row with zero out-weight inside an SCC')
+ValueError: row with zero out-weight inside an SCC

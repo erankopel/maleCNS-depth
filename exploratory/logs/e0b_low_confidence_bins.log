@@ -1,0 +1,5 @@
+  batch 1000/4759  [29 s]
+  batch 2000/4759  [58 s]
+  batch 3000/4759  [89 s]
+  batch 4000/4759  [118 s]
+saved per-edge counts below 0.55: 25,545,360 edges x 5 bins; synapses per bin: [676366, 684359, 694885, 709507, 722779]

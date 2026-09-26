@@ -1,0 +1,90 @@
+\section{Data and methods}\label{sec:methods}
+
+\subsection{Connectome and neuron set}
+
+We used the male CNS connectome version~1.0, flat-connectome release at minimum synapse confidence
+0.5 \cite{berg2026,malecnsdata} (CC-BY). The three input tables were checked against md5 sums frozen
+in the pre-registration. Neurons are the 166{,}700 bodies with a superclass annotation; the
+segment-to-segment table (151{,}856{,}684 rows, 311{,}833{,}243 synapses) restricted to pairs of
+neurons gives 25{,}582{,}938 directed edges carrying 124{,}177{,}617 synapses, 6{,}242{,}118 of
+them with at least five synapses. The giant strongly connected component (SCC) at weight $w\ge 1$,
+denoted $G$, has 165{,}314 neurons (99.2\,\%) and 25{,}545{,}360 edges; at $w\ge5$ the giant SCC
+has 157{,}821 neurons and 6{,}120{,}084 edges. Signs follow the consensus neurotransmitter
+prediction of each neuron \cite{berg2026}: acetylcholine $+1$; GABA, glutamate and histamine $-1$;
+all others $0$ (base convention). The alternative convention of Pospisil et al.\ \cite{pospisil2024}
+adds dopamine $+1$, serotonin and octopamine $-1$.
+
+\subsection{Synapse-flow chain and signed map}
+
+On a giant SCC with weights $w_{ij}$ (synapses from $i$ to $j$), the synapse-flow chain is
+$P_{ij}=w_{ij}/\sum_k w_{ik}$, a row-stochastic matrix; a walker at $i$ moves to a postsynaptic
+partner in proportion to synapse number. Its stationary distribution $\pi$ was computed by power
+iteration and its leading eigenvalues by ARPACK \cite{lehoucq1998} (implicitly restarted Arnoldi,
+tolerance $10^{-8}$, seeded starting vectors). The signed map is $M_{ji}=s_i w_{ij}/\mathrm{in}_j$,
+with $s_i$ the sign of the presynaptic neuron and $\mathrm{in}_j$ the input weight of $j$ from
+partners of nonzero sign (postsynaptic normalisation); the floored map of H2 replaces
+$\mathrm{in}_j$ by $\max(\mathrm{in}_j,F)$. The participation ratio of an eigenvector $v$ is
+$1/\sum_i p_i^2$ with $p_i=|v_i|^2/\sum_k |v_k|^2$.
+
+\subsection{Mixing depth and certified bounds}
+
+For a stochastic matrix $Q$, the Dobrushin coefficient is
+\begin{equation}
+  \Dob(Q)=\tfrac12\max_{a,b}\lVert Q_{a\cdot}-Q_{b\cdot}\rVert_1 = 1-\min_{a,b}\sum_k \min(Q_{ak},Q_{bk}),
+\end{equation}
+so that $\Dob(P^r)=0$ exactly when every starting neuron leads to the same distribution after $r$
+steps \cite{dobrushin1956,seneta2006}. Two certified bounds are cheap to compute on a chain of this
+size. For any set $W$ of witness rows,
+$\Dob(P^r)\ge\max_{a,b\in W}d_r(a,b)$ with $d_r(a,b)=\tfrac12\lVert(e_a-e_b)P^r\rVert_1$; and for any
+set $K$ of columns, $\Dob(P^r)\le 1-\sum_{k\in K}\min_i (P^r)_{ik}$ \cite{seneta2006}. Witnesses were
+90 random rows and the 10 rows of largest stationary mass (seed 7); hub columns were the 500 columns
+of largest stationary mass. Rounding was bounded a priori \cite{higham2002}: after $r$ steps each
+propagated row carries an $\ell_1$ error of at most about $r(D+1)u$, with $D$ the largest in- or
+out-degree and $u=2^{-53}$, and the final sums add at most about $2nu$; a slack of $10^{-9}r$,
+subtracted from lower and added to upper bounds, covers both (and the rounding of the robust sums
+below) with a margin of at least a factor of ten at every $r$. The bounds are therefore statements about the exact chain defined by the data; in the text and
+tables they are rounded to the digits shown, and the result files give them in full.
+
+\subsection{Perturbation classes}
+
+A perturbation class is a set of chains $P'$ that the data cannot rule out. The \emph{uniform}
+class $C(\delta)$ multiplies every edge weight by a factor in $[1-\delta,1+\delta]$. The
+\emph{confidence} class at level $c$ allows every edge weight $w'_{ij}$ between $w^{\mathrm{hi}}_{ij}(c)$,
+the number of its synapses with $\min(\text{conf}_\text{pre},\text{conf}_\text{post})\ge c$, and
+$w_{ij}$; that is, any subset of the synapses below confidence $c$ may be false detections. Both
+classes are handled by the following two facts (proofs in Appendix~\ref{app:proofs}).
+
+\begin{lemma}\label{lem:row}
+If $0\le w'\le w$ entrywise on a row with total weights $W'=\sum_j w'_j>0$ and $W=\sum_j w_j$, the
+normalised rows satisfy $\tv(w/W,\,w'/W')\le (W-W')/W$.
+\end{lemma}
+
+\begin{lemma}\label{lem:robust}
+Let $P,P'$ be stochastic with $\tv(P_{i\cdot},P'_{i\cdot})\le\varepsilon_i$ for every row $i$, and
+$x_t=(e_a-e_b)P^t$. Then
+$\bigl|d_r(a,b;P')-d_r(a,b;P)\bigr|\le\sum_{t=0}^{r-1}\sum_i |x_t(i)|\,\varepsilon_i$.
+\end{lemma}
+
+For the confidence class, Lemma~\ref{lem:row} gives
+$\varepsilon_i(c)=1-W^{\mathrm{hi}}_i(c)/W_i$, the fraction of the row's synapses below confidence
+$c$, and Lemma~\ref{lem:robust} turns every witness pair into a lower bound on $\Dob(P'^r)$ valid for
+the whole class. The exploratory analysis had used this argument without the $t=0$ term; that
+error, found before registration, is corrected throughout (Section~\ref{sec:prereg}).
+
+\subsection{Pre-registration and protocol}\label{sec:prereg}
+
+The pre-registration was drafted and frozen on 19 September 2026 after an exploratory phase in which
+every number of its Section~4 was computed; it was first made public, byte-identical, on
+26 September 2026 \cite{kopel2026reg}, which is its registration date. Before any confirmatory
+computation, a dated log of deviations and clarifications fixed every definition the text left open
+(the removal sets of H1, the floor of H2, the graph, witnesses and confidence grid of H4, the
+carrier sets of H5, the eigen-solver seeds and the run protocol), and the confirmatory scripts were
+tested only on synthetic data against independent dense computations and frozen
+\cite{kopel2026freeze}. The pre-registration text contained three errors, found and logged before
+registration: the robust lower bounds printed in its Section~4.4 had been computed without the
+$t=0$ term of Lemma~\ref{lem:robust} and were too high by $0.21$; its knock-out of ascending and
+descending neurons removed 3{,}693 neurons, not the 3{,}160 stated; and its claim that no
+brain-and-cord connectome had been analysed before overlooked BANC \cite{bates2026}. The analysis
+ran once, on 26 September 2026, on a Linux container (two cores, 7.8\,GB) with Python 3.11,
+NumPy 2.4.4, SciPy 1.17.1 and one BLAS thread, after a check that every executed file matched the
+frozen manifest; every script ran once, without error.

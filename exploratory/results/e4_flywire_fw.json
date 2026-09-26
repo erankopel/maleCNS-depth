@@ -1,0 +1,58 @@
+{
+ "label": "FlyWire v783 (female brain)",
+ "w1": {
+  "n_scc": 135403,
+  "edges": 15082232,
+  "lam2": 0.9999898997743237,
+  "lam3": 0.9987222241612507,
+  "top1pct_mass": 0.40512129250063933,
+  "top10pct_mass": 0.8119260980413476,
+  "entropy_bits": 13.975567199354652,
+  "cut_size": 7,
+  "cut_mass": 8.492167612268468e-05,
+  "cut_conductance": 2.8113472624736527e-05,
+  "two_block_prediction": 0.9999718841397324,
+  "cut_composition": {
+   "sensory:R1-6": 4,
+   "optic:?": 2,
+   "optic:L2": 1
+  },
+  "certified_lower": {
+   "8": 0.8967954744580564,
+   "16": 0.6404423437496157,
+   "32": 0.2846644824167571,
+   "64": 0.04310143192970978
+  }
+ },
+ "w5": {
+  "n_scc": 119756,
+  "edges": 2634252,
+  "lam2": 0.9546252666796918,
+  "lam3": 0.9428810476535232,
+  "top1pct_mass": 0.5637121476935283,
+  "top10pct_mass": 0.8888876863117241,
+  "entropy_bits": 12.680132440274756,
+  "cut_size": 891,
+  "cut_mass": 0.017728203303073016,
+  "cut_conductance": 0.0687449007088141,
+  "two_block_prediction": 0.9300143799913925,
+  "cut_composition": {
+   "visual_projection:MeTu2a": 67,
+   "central:ER3d": 46,
+   "central:EPG": 44,
+   "optic:DmDRA1": 42,
+   "central:ER2": 41,
+   "central:TuBu09,TuBu10": 34,
+   "visual_projection:MeTu2b": 31,
+   "central:ER1": 27,
+   "visual_projection:MeTu4d": 27,
+   "central:TuBu03": 26
+  },
+  "certified_lower": {
+   "8": 0.9330224057039861,
+   "16": 0.6311848128359039,
+   "32": 0.2609358353902297,
+   "64": 0.05012157996939328
+  }
+ }
+}

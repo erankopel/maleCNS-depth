@@ -1,0 +1,5 @@
+  batch 1000/4759  [30 s]
+  batch 2000/4759  [60 s]
+  batch 3000/4759  [93 s]
+  batch 4000/4759  [124 s]
+saved per-edge confidence histograms: 25,545,360 edges x 10 bins; synapses per bin: [3487896, 3884006, 4757101, 5668068, 9102172, 10290748, 11211475, 14713176, 30305651, 30533969]

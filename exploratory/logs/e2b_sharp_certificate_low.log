@@ -1,0 +1,16 @@
+G: 165,314 neurons, 25,545,360 edges; confidence histogram matches edge by edge
+stationary distribution: 480 iterations, final L1 change 1.0e-13
+c = 0.51: mean eps 0.0054  eps* 0.0051  delta(M) 0.0051   (pi-weighted 0.0052 / 0.0046 / 0.0046)  [8 s]
+c = 0.52: mean eps 0.0109  eps* 0.0098  delta(M) 0.0098   (pi-weighted 0.0101 / 0.0084 / 0.0083)  [16 s]
+c = 0.53: mean eps 0.0165  eps* 0.0143  delta(M) 0.0142   (pi-weighted 0.0152 / 0.0121 / 0.0118)  [23 s]
+c = 0.54: mean eps 0.0222  eps* 0.0186  delta(M) 0.0184   (pi-weighted 0.0204 / 0.0157 / 0.0152)  [31 s]
+witness rows: 100 (100 distinct)
+r =   1  nominal 1.0000  c=0.54: eps +1.0000 eps* +1.0000 delta +1.0000   c=0.51: eps +1.0000 eps* +1.0000   [15 s]
+r =   2  nominal 1.0000  c=0.54: eps +0.9862 eps* +0.9885 delta +0.9886   c=0.51: eps +0.9973 eps* +0.9975   [31 s]
+r =   4  nominal 0.9981  c=0.54: eps +0.9143 eps* +0.9305 delta +0.9315   c=0.51: eps +0.9770 eps* +0.9792   [57 s]
+r =   8  nominal 0.9357  c=0.54: eps +0.6557 eps* +0.7067 delta +0.7106   c=0.51: eps +0.8604 eps* +0.8675   [102 s]
+r =  16  nominal 0.7075  c=0.54: eps +0.0979 eps* +0.2103 delta +0.2205   c=0.51: eps +0.5547 eps* +0.5696   [186 s]
+r =  32  nominal 0.3122  c=0.54: eps -0.0567 eps* -0.0459 delta -0.0452   c=0.51: eps +0.0713 eps* +0.0958   [349 s]
+r =  48  nominal 0.1265  c=0.54: eps -0.0573 eps* -0.0465 delta -0.0458   c=0.51: eps -0.0146 eps* -0.0135   [511 s]
+saved /home/claude/maleCNS-depth/code/exploratory/../../exploratory/results/e2b_sharp_certificate_low.json
+[peakrun] wall 572.3 s  peak RSS 3837 MB  user 472.0 s  sys 99.8 s

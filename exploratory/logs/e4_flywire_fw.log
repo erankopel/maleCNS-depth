@@ -1,0 +1,6 @@
+FlyWire v783: 139,255 proofread neurons, 15,091,983 connected pairs, 54,492,922 synapses (0 rows outside the proofread set dropped)
+witness rows: 100 (100 distinct)
+FlyWire v783 (female brain), w>=1: SCC 135,403, |lam2| 0.999990, |lam3| 0.998722, top 1% mass 0.405; cut 7 neurons, mass 0.0001, conductance 2.81e-05, two-block 0.999972; composition {'sensory:R1-6': 4, 'optic:?': 2, 'optic:L2': 1}; lower bounds {8: 0.8967954744580564, 16: 0.6404423437496157, 32: 0.2846644824167571, 64: 0.04310143192970978}  [644 s]
+witness rows: 100 (100 distinct)
+FlyWire v783 (female brain), w>=5: SCC 119,756, |lam2| 0.954625, |lam3| 0.942881, top 1% mass 0.564; cut 891 neurons, mass 0.0177, conductance 6.87e-02, two-block 0.930014; composition {'visual_projection:MeTu2a': 67, 'central:ER3d': 46, 'central:EPG': 44, 'optic:DmDRA1': 42, 'central:ER2': 41, 'central:TuBu09,TuBu10': 34, 'visual_projection:MeTu2b': 31, 'central:ER1': 27, 'visual_projection:MeTu4d': 27, 'central:TuBu03': 26}; lower bounds {8: 0.9330224057039861, 16: 0.6311848128359039, 32: 0.2609358353902297, 64: 0.05012157996939328}  [41 s]
+saved /home/claude/maleCNS-depth/code/exploratory/../../exploratory/results/e4_flywire_fw.json

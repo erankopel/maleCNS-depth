@@ -1,0 +1,41 @@
+\appendix
+
+\section{Proofs}\label{app:proofs}
+
+\paragraph{Lemma~\ref{lem:row}.}
+Write $p=w/W$ and $p'=w'/W'$. Since $W'\le W$, $p'_j=w'_j/W'\ge w'_j/W$, hence
+$p_j-p'_j\le (w_j-w'_j)/W$ for every $j$. The total-variation distance is the sum of the positive
+parts of $p_j-p'_j$, so $\tv(p,p')\le\sum_j (w_j-w'_j)/W=(W-W')/W$. If $W'=0$ the row of $P'$ may be
+any distribution and $\tv\le1=(W-W')/W$ holds trivially. With $W'\ge W^{\mathrm{hi}}(c)$ for every
+member of the confidence class, $\varepsilon_i(c)=1-W^{\mathrm{hi}}_i(c)/W_i$ bounds the row change
+of every member. For the uniform class $C(\delta)$ every ratio $P'_{ij}/P_{ij}$ lies in
+$[(1-\delta)/(1+\delta),(1+\delta)/(1-\delta)]$, which gives $\tv\le 2\delta/(1+\delta)$; the
+pre-registered, slightly larger constant $\varepsilon=2\delta/(1-\delta)$ was kept.
+
+\paragraph{Lemma~\ref{lem:robust}.}
+Let $x'_t=(e_a-e_b)P'^t$ and $\Delta_t=x'_t-x_t$, so $\Delta_0=0$ and
+$\Delta_{t+1}=\Delta_tP'+x_t(P'-P)$. Because $P'$ is stochastic, $\lVert yP'\rVert_1\le\lVert
+y\rVert_1$ for every row vector $y$, and therefore
+$\lVert\Delta_r\rVert_1\le\sum_{t=0}^{r-1}\lVert x_t(P'-P)\rVert_1$. Each term satisfies
+$\lVert x_t(P'-P)\rVert_1\le\sum_i|x_t(i)|\,\lVert P'_{i\cdot}-P_{i\cdot}\rVert_1\le\sum_i|x_t(i)|\,2\varepsilon_i$.
+Since $d_r=\tfrac12\lVert x_r\rVert_1$, the triangle inequality gives
+$|d_r(P')-d_r(P)|\le\tfrac12\lVert\Delta_r\rVert_1\le\sum_{t=0}^{r-1}\sum_i|x_t(i)|\,\varepsilon_i$.
+The $t=0$ term, $\varepsilon_a+\varepsilon_b$, is the one the exploratory script had omitted; the
+test suite of the repository shows that without it the bound is violated by chains sampled from both
+classes.
+
+\paragraph{Lemma~\ref{lem:sharp}.}
+For every member $w'$ of the class, $\tv(p,p')=\max_S\,(p(S)-p'(S))$ over sets $S$ of partners. For a
+fixed $S$, $p'(S)=w'(S)/(w'(S)+w'(S^c))$ increases with $w'(S)$ and decreases with $w'(S^c)$, so its
+smallest value over the class is $w^{\mathrm{hi}}(S)/(w^{\mathrm{hi}}(S)+w(S^c))
+=w^{\mathrm{hi}}(S)/(W-l(S))$, attained by removing every low-confidence synapse to $S$ and none to
+$S^c$. Taking the maximum over $S$ gives $\varepsilon^*$; and since $W-l(S)\le W$,
+$w(S)/W-w^{\mathrm{hi}}(S)/(W-l(S))\le l(S)/W\le\varepsilon$. The maximum over the $2^d-1$ nonempty
+sets was computed exactly for rows with $d\le12$ partners (3.6\,\% of the rows of $G$). For the
+others we used an upper bound: for a fixed removed weight $C=l(S)$ the maximisation is a knapsack
+problem in which a partner $j$ contributes $w_j/W-w^{\mathrm{hi}}_j/(W-C)$ at cost $l_j$; the ratio
+of the two decreases with the high-confidence fraction $q_j=w^{\mathrm{hi}}_j/w_j$ for every $C$, so
+the fractional relaxation is solved, for all $C$ at once, by taking partners in increasing order of
+$q_j$, and its largest value along this path bounds $\varepsilon^*$ from above. On random test rows
+the bound exceeded the exact value by at most $0.0053$ for 13 to 15 partners.
+

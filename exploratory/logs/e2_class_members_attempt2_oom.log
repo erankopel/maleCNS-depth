@@ -1,0 +1,6 @@
+witness rows: 100 (100 distinct)
+P (all synapses, minconf 0.5)      synapses 123,954,262  row TV mean 0.000  lam2 w>=1 0.945027 (SCC 165,314)  w>=5 0.996524 (SCC 157,821)  max d_32 0.3122  [226 s]
+M(0.60): rows below 0.60 removed   synapses 116,582,360  row TV mean 0.042  lam2 w>=1 0.944091 (SCC 165,306)  w>=5 0.996411 (SCC 157,493)  max d_32 0.3042  max |change d_32| 0.0081  [220 s]
+M(0.70): rows below 0.70 removed   synapses 106,157,191  row TV mean 0.080  lam2 w>=1 0.943168 (SCC 165,276)  w>=5 0.996290 (SCC 156,995)  max d_32 0.2960  max |change d_32| 0.0163  [203 s]
+M(0.80): rows below 0.80 removed   synapses  86,764,271  row TV mean 0.134  lam2 w>=1 0.941309 (SCC 165,163)  w>=5 0.940271 (SCC 155,173)  max d_32 0.2858  max |change d_32| 0.0475  [197 s]
+M(0.90): rows below 0.90 removed   synapses  60,839,620  row TV mean 0.210  lam2 w>=1 0.937382 (SCC 164,894)  w>=5 0.952070 (SCC 149,794)  max d_32 0.2645  max |change d_32| 0.0743  [168 s]
