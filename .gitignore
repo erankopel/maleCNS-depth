@@ -8,3 +8,5 @@ paper/*.out
 paper/*.fls
 paper/*.fdb_latexmk
 paper/*.blg
+# local submission material (arXiv pack, submission sheet); not published
+submission/
