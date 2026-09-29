@@ -10,6 +10,7 @@ license: MIT
 version: 0.4.0
 date-released: 2026-09-28
 repository-code: "https://github.com/erankopel/maleCNS-depth"
+doi: "10.5281/zenodo.22980247"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22980248"
@@ -17,6 +18,15 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.22981189"
     description: "Freeze of the confirmatory analysis, release v0.2.0-frozen (26 Sep 2026)"
+  - type: doi
+    value: "10.5281/zenodo.23010800"
+    description: "Exploratory analyses and manuscript, release v0.4.0-exploratory (28 Sep 2026)"
+  - type: doi
+    value: "10.5281/zenodo.22980247"
+    description: "All versions (concept DOI; resolves to the latest release)"
+  - type: doi
+    value: "10.48550/arXiv.2609.33054"
+    description: "Preprint of the paper, arXiv:2609.33054 [q-bio.NC]"
 keywords:
   - connectomics
   - Drosophila
